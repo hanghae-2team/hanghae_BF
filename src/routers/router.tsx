@@ -5,6 +5,7 @@ import { ResultDetail } from '@/pages/ResultDetail';
 import { ResultHome } from '@/pages/ResultHome';
 import { RollingList } from '@/pages/RollingList';
 import { RollingWrite } from '@/pages/RollingWrite';
+import { Survey } from '@/pages/Survey';
 
 export const PATH = {
   HOME: () => '/',
@@ -13,6 +14,7 @@ export const PATH = {
   ROLLING_LIST: (id: string) => `/rolling-list/${id}`,
   RESULT_HOME: () => '/result',
   RESULT_DETAIL: () => '/result/:id',
+  SURVEY: () => '/survey',
 };
 
 const router = createBrowserRouter([
@@ -30,6 +32,7 @@ const router = createBrowserRouter([
   },
   { path: PATH.RESULT_HOME(), element: <ResultHome /> },
   { path: PATH.RESULT_DETAIL(), element: <ResultDetail /> },
+  { path: PATH.SURVEY(), element: <Survey /> },
 ]);
 
 export const Routers = () => {

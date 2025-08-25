@@ -1,0 +1,34 @@
+@keyframes wave {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  25% {
+    transform: translateX(-2px) scaleY(0.95);
+  }
+  50% {
+    transform: translateX(0) scaleY(1.05);
+  }
+  75% {
+    transform: translateX(2px) scaleY(0.95);
+  }
+  100% {
+    transform: translateX(0) scaleY(1);
+  }
+}
+
+.animate-wave {
+  animation: wave 4s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
