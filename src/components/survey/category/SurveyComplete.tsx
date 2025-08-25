@@ -1,7 +1,6 @@
 import { CheckCircleIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-import { SurveyLayout } from '@/components/survey/SurveyLayout';
 import { Button } from '@/elements/button';
 import { formatTime, SURVEY_RESULT_RELEASE_TIME, SURVEY_RESULT_TIMER } from '@/utils/SurveyUtils';
 
@@ -35,7 +34,7 @@ export const SurveyComplete = () => {
   }, []);
 
   return (
-    <SurveyLayout>
+    <>
       {/* 완료 헤더 */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-100 to-emerald-200 rounded-full mb-4 shadow-lg">
@@ -64,13 +63,12 @@ export const SurveyComplete = () => {
           ))}
         </div>
       </div>
-
       <Button
         className="w-full cursor-pointer bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white font-bold text-lg py-4 shadow-lg hover:shadow-xl"
         size="lg"
       >
         설문 다시하기
       </Button>
-    </SurveyLayout>
+    </>
   );
 };

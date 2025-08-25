@@ -1,17 +1,22 @@
 import '@/styles/animation.css';
 
-import { OptionsCard } from '@/components/survey/intro/OptionsCard';
-import { ShipLogo } from '@/components/survey/intro/ShipLogo';
-import { SurveyLayout } from '@/components/survey/SurveyLayout';
+import { OptionsCard } from '@/components/survey/OptionsCard';
+import { useSurvey } from '@/components/survey/SurveyContext';
 import { Button } from '@/elements/button';
+import { ShipLogo } from '@/elements/ShipLogo';
 import type { SurveyCategory } from '@/types/survey';
 import { SURVEY_CARDS } from '@/utils/SurveyUtils';
 
 export const SurveyStart = () => {
-  return (
-    <SurveyLayout>
-      <ShipLogo />
+  const { moveToNextCategory } = useSurvey();
 
+  const handleStart = () => {
+    moveToNextCategory();
+  };
+
+  return (
+    <>
+      <ShipLogo />
       {/* 메인 질문 */}
       <h2 className="text-2xl font-bold text-gray-800 mb-4 leading-tight">나와 찰떡궁합인 항해인은?</h2>
 
@@ -32,9 +37,10 @@ export const SurveyStart = () => {
       <Button
         className="w-full cursor-pointer bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white font-bold text-lg py-4 shadow-lg hover:shadow-xl"
         size="lg"
+        onClick={handleStart}
       >
         시작하기
       </Button>
-    </SurveyLayout>
+    </>
   );
 };

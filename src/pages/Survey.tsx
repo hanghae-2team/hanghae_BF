@@ -1,11 +1,13 @@
-import { SurveyStart } from '@/components/survey/intro/SurveyStart';
-import { SurveyComplete } from '@/components/survey/SurveyComplete';
+import { SurveyProvider } from '@/components/survey/SurveyContext';
+import { SurveyLayout } from '@/components/survey/SurveyLayout';
+import { SurveyMain } from '@/components/survey/SurveyMain';
 
 export const Survey = () => {
   return (
-    <div className="bg-amber-200">
-      <SurveyStart />
-      <SurveyComplete />
-    </div>
+    <SurveyProvider>
+      <SurveyLayout>
+        <SurveyMain />
+      </SurveyLayout>
+    </SurveyProvider>
   );
 };

@@ -61,3 +61,12 @@ export const formatTime = (value: number, key: string) => {
   if (key === 'days') return value.toString();
   return value.toString().padStart(2, '0');
 };
+
+/**성향 조사 선택지 */
+export const SURVEY_PERSONALITY_OPTIONS = [
+  { value: 1, label: '매우 그렇다' },
+  { value: 2, label: '그렇다' },
+  { value: 3, label: '보통이다' },
+  { value: 4, label: '그렇지 않다' },
+  { value: 5, label: '매우 그렇지 않다' },
+];
