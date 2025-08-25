@@ -1,0 +1,12 @@
+[
+  { "id": 21, "order": 1, "type": "single_choice", "choices": ["물냉면", "비빔냉면"] },
+  { "id": 22, "order": 2, "type": "single_choice", "choices": ["후라이드", "양념"] },
+  { "id": 23, "order": 3, "type": "single_choice", "choices": ["돼지고기", "소고기"] },
+  { "id": 24, "order": 4, "type": "single_choice", "choices": ["콜라", "사이다"] },
+  { "id": 25, "order": 5, "type": "single_choice", "choices": ["햄버거", "피자"] },
+  { "id": 26, "order": 6, "type": "single_choice", "choices": ["짜장면", "짬뽕"] },
+  { "id": 27, "order": 7, "type": "single_choice", "choices": ["부먹", "찍먹"] },
+  { "id": 28, "order": 8, "type": "single_choice", "choices": ["꼬들면", "퍼진면"] },
+  { "id": 29, "order": 9, "type": "single_choice", "choices": ["하와이안 피자 호", "하와이안 피자 불호"] },
+  { "id": 30, "order": 10, "type": "single_choice", "choices": ["소주", "맥주"] }
+]

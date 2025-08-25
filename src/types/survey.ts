@@ -1,1 +1,1 @@
-export type SurveyType = 'personality' | 'value' | 'taste';
+export type SurveyCategory = 'personality' | 'value' | 'taste';
