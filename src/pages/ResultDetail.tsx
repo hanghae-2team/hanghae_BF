@@ -45,8 +45,8 @@ export const ResultDetail = () => {
               </Tooltip>
               <p className="text-xs text-gray-500">{user.github}</p>
             </div>
-            <Button className="bg-gray-800 cursor-pointer">
-              <ChevronRight />
+            <Button className="bg-transparent shadow-none cursor-pointer hover:bg-transparent ">
+              <ChevronRight size={20} stroke="#303030" />
             </Button>
           </li>
         ))}
@@ -94,8 +94,8 @@ export const ResultDetail = () => {
       </div>
       <div className="p-4 rounded-sm">
         <div className="text-3xl font-bold text-center">롤링페이퍼</div>
-        <div className="h-20 text-center text-base text-gray-600 bg-gray-50 rounded-sm leading-20 mt-2">
-          수료일에 공개됩니다
+        <div className="p-6 text-center text-base whitespace-pre-line text-gray-600 bg-gray-50 rounded-sm mt-2">
+          수료일에 공개됩니다{'\n'}잠시만 기다려주세요🍀
         </div>
       </div>
     </div>

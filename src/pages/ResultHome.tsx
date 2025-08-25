@@ -5,20 +5,21 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 
 export const ResultHome = () => {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-center">결과보기</h1>
-      <Link to={''} className="font-bold flex bg-gray-200 rounded-sm p-2">
-        내 결과 보러가기 <ChevronRight />
+    <div className="p-6 space-y-4">
+      <h1 className="text-2xl font-bold text-center">✨매칭결과✨</h1>
+      <Link to={''} className="font-bold flex rounded-sm p-2 bg-linear-65 from-sky-200 to-sky-100 text-gray-700 ">
+        내 결과 보러가기 <ChevronRight strokeWidth={1.5} />
       </Link>
-      <div className="min-w-xs w-full my-4 mx-auto border rounded-sm inset-0 flex flex-wrap gap-4 p-6">
+      <div className="my-4 mx-auto grid grid-cols-4 sm:grid-cols-6 gap-y-4 gap-x-2">
         {MOCK_DATAS.map((data) => (
           <Link to={data.github} key={data.key}>
-            <div className="flex flex-col w-24 justify-center items-center p-4">
-              <Avatar className="size-12">
+            <div className="group w-full flex flex-col justify-center items-center p-4 rounded-sm border bg-gray-50 shadow-zinc-100 animate-fade-up transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-md ">
+              <Avatar className="size-10 sm:size-12 ">
                 <AvatarImage src={data.profileImage} />
-                <AvatarFallback>CN</AvatarFallback>
+                <AvatarFallback>{data.name}</AvatarFallback>
               </Avatar>
-              <div className="font-bold">{data.name}</div>
+              <div className="font-bold group-hover:text-sky-600">{data.name}</div>
+              <div className="text-xs ">{data.github}</div>
             </div>
           </Link>
         ))}
