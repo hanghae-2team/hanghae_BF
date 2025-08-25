@@ -2,6 +2,7 @@ import brainSvg from '@/assets/survey/brain.svg';
 import foodSvg from '@/assets/survey/food.svg';
 import hmmSvg from '@/assets/survey/hmm.svg';
 
+/** 설문 카드 */
 export const SURVEY_CARDS = {
   personality: {
     type: 'personality',
@@ -43,3 +44,20 @@ export const SURVEY_CARDS = {
     },
   },
 } as const;
+
+/** 설문 결과 발표 시간 */
+export const SURVEY_RESULT_RELEASE_TIME = '2025-09-06T00:00:00';
+
+/** 설문 결과 발표 타이머 */
+export const SURVEY_RESULT_TIMER = [
+  { key: 'days', label: '일' },
+  { key: 'hours', label: '시간' },
+  { key: 'minutes', label: '분' },
+  { key: 'seconds', label: '초' },
+];
+
+/** 설문 결과 발표 타이머 포맷 */
+export const formatTime = (value: number, key: string) => {
+  if (key === 'days') return value.toString();
+  return value.toString().padStart(2, '0');
+};

@@ -3,8 +3,10 @@ import { useEffect, useState } from 'react';
 
 import { SurveyLayout } from '@/components/survey/SurveyLayout';
 import { Button } from '@/elements/button';
+import { formatTime, SURVEY_RESULT_RELEASE_TIME, SURVEY_RESULT_TIMER } from '@/utils/SurveyUtils';
 
 export const SurveyComplete = () => {
+  /** 설문 결과 발표 시간 */
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -13,7 +15,7 @@ export const SurveyComplete = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-09-06T00:00:00');
+    const targetDate = new Date(SURVEY_RESULT_RELEASE_TIME);
 
     const timer = setInterval(() => {
       const now = new Date();
@@ -52,22 +54,14 @@ export const SurveyComplete = () => {
 
         {/* 카운트다운 타이머 */}
         <div className="grid grid-cols-4 gap-3 mb-4">
-          <div className="bg-white rounded-xl p-3 text-center border border-blue-100 shadow-sm">
-            <div className="text-blue-600 font-bold text-2xl">{timeLeft.days}</div>
-            <div className="text-blue-500 text-xs">일</div>
-          </div>
-          <div className="bg-white rounded-xl p-3 text-center border border-blue-100 shadow-sm">
-            <div className="text-blue-600 font-bold text-2xl">{timeLeft.hours.toString().padStart(2, '0')}</div>
-            <div className="text-blue-500 text-xs">시간</div>
-          </div>
-          <div className="bg-white rounded-xl p-3 text-center border border-blue-100 shadow-sm">
-            <div className="text-blue-600 font-bold text-2xl">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-            <div className="text-blue-500 text-xs">분</div>
-          </div>
-          <div className="bg-white rounded-xl p-3 text-center border border-blue-100 shadow-sm">
-            <div className="text-blue-600 font-bold text-2xl">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-            <div className="text-blue-500 text-xs">초</div>
-          </div>
+          {SURVEY_RESULT_TIMER.map(({ key, label }, index) => (
+            <div key={index} className="bg-white rounded-xl p-3 text-center border border-blue-100 shadow-sm">
+              <div className="text-blue-600 font-bold text-2xl">
+                {formatTime(timeLeft[key as keyof typeof timeLeft], key)}
+              </div>
+              <div className="text-blue-500 text-xs">{label}</div>
+            </div>
+          ))}
         </div>
       </div>
 
