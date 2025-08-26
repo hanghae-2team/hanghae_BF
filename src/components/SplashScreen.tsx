@@ -136,21 +136,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete, duration
           </div>
         </div>
 
-        {/* 로딩 진행률 */}
-        {/* <div className="w-full space-y-4 sm:space-y-5 lg:space-y-6">
-          <div className="flex items-center justify-between text-sm text-gray-600 dark:text-gray-300 sm:text-base lg:text-lg">
-            <span className="animate-pulse">로딩 중...</span>
-            <span className="font-mono bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
-              {progress}%
-            </span>
-          </div>
-
-          <div className="flex items-center justify-center space-x-2 text-xs text-gray-500 dark:text-gray-400 sm:text-sm lg:text-base">
-            <Loader2 className="h-3 w-3 animate-spin sm:h-4 sm:w-4 lg:h-5 lg:w-5 text-blue-500" />
-            <span className="text-center animate-pulse">시스템을 준비하고 있어요!</span>
-          </div>
-        </div> */}
-
         {/* 건너뛰기 버튼 */}
         {isSkipButton && progress < 100 && (
           <Button
