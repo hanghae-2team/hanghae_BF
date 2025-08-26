@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { RollingLayout } from '@/components/rolling/RollingLayout';
+
 // import { useParams } from 'react-router';
 import { RollingPapers } from '../components/rolling/RollingPapers';
 
@@ -15,12 +17,12 @@ export const RollingList = () => {
   const NAME = '김철수';
   const [rollingPapers] = useState(ROLLING_PAPERS);
   return (
-    <div className="min-h-screen bg-background px-4 py-8 sm:px-6 sm:py-12 bg-blue-200 overflow-x-hidden">
+    <RollingLayout>
       <div className="mx-auto max-w-3xl ">
         <h1 className="text-3xl font-bold text-foreground mb-8 text-center">{NAME}님의 롤링 페이퍼 </h1>
         <RollingPapers rollingPapers={rollingPapers} />
       </div>
-    </div>
+    </RollingLayout>
   );
 };
 
