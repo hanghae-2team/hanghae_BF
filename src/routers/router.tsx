@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
-// import { HobbySelect } from '@/pages/HobbySelect';
+import { HobbySelect } from '@/pages/HobbySelect';
 import { Home } from '@/pages/Home';
 import { ResultDetail } from '@/pages/ResultDetail';
 import { ResultHome } from '@/pages/ResultHome';
@@ -35,9 +35,7 @@ const router = createBrowserRouter([
   { path: PATH.RESULT_HOME(), element: <ResultHome /> },
   { path: PATH.RESULT_DETAIL(), element: <ResultDetail /> },
   { path: PATH.SURVEY(), element: <Survey /> },
-  //  { path: PATH.HOBBY_SELECT(),
-  //   element: <HobbySelect />,
-  // },
+  { path: PATH.HOBBY_SELECT(), element: <HobbySelect /> },
 ]);
 
 export const Routers = () => {
