@@ -1,8 +1,8 @@
 import { useState } from 'react';
+import { useParams } from 'react-router';
 
 import { RollingLayout } from '@/components/rolling/RollingLayout';
 
-// import { useParams } from 'react-router';
 import { RollingPapers } from '../components/rolling/RollingPapers';
 
 export interface IRollingPaper {
@@ -13,13 +13,15 @@ export interface IRollingPaper {
 }
 
 export const RollingList = () => {
-  //   const { id } = useParams();
+  const { id } = useParams();
   const NAME = '김철수';
   const [rollingPapers] = useState(ROLLING_PAPERS);
   return (
     <RollingLayout>
       <div className="mx-auto max-w-3xl ">
-        <h1 className="text-3xl font-bold text-foreground mb-8 text-center">{NAME}님의 롤링 페이퍼 </h1>
+        <h1 className="text-3xl font-bold text-foreground mb-8 text-center">
+          {id} {NAME}님의 롤링 페이퍼{' '}
+        </h1>
         <RollingPapers rollingPapers={rollingPapers} />
       </div>
     </RollingLayout>

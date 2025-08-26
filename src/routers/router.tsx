@@ -5,14 +5,11 @@ import { Home } from '@/pages/Home';
 import { ResultDetail } from '@/pages/ResultDetail';
 import { ResultHome } from '@/pages/ResultHome';
 import { RollingList } from '@/pages/RollingList';
-import { RollingWrite } from '@/pages/RollingWrite';
 import { Survey } from '@/pages/Survey';
 
 export const PATH = {
   HOME: () => '/',
-  ROLLING_WRITE: (id: string) => `/rolling-write/${id}`,
-  ROLLING_DETAIL: (id: string) => `/rolling-detail/${id}`,
-  ROLLING_LIST: (id: string) => `/rolling-list/${id}`,
+  ROLLING_LIST: () => `/rolling-list/:id`,
   RESULT_HOME: () => '/result',
   RESULT_DETAIL: () => '/result/:id',
   SURVEY: () => '/survey',
@@ -25,11 +22,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/rolling-write',
-    element: <RollingWrite />,
-  },
-  {
-    path: '/rolling-list/:id',
+    path: PATH.ROLLING_LIST(),
     element: <RollingList />,
   },
   { path: PATH.RESULT_HOME(), element: <ResultHome /> },
