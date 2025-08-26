@@ -47,7 +47,7 @@ export const RollingPapers = ({ rollingPapers }: IRollingPapersProps) => {
             {rollingPapers.map((paper) => (
               <Card
                 key={paper.id}
-                className="relative cursor-pointer transform transition-all duration-200 hover:scale-102 hover:shadow-none border-none rounded-none overflow-visible bg-transparent"
+                className="relative cursor-pointer transform transition-all duration-200 hover:scale-102 shadow-none border-none rounded-none overflow-visible bg-transparent"
                 onClick={() => openModal(paper.id)}
               >
                 <CardContent className="p-0">
