@@ -4,7 +4,7 @@ import { useSurvey } from '@/components/survey/SurveyContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/elements/card';
 
 export const SurveyTaste = () => {
-  const { currentQuestion, selectQuestionAnswer, answers } = useSurvey();
+  const { currentQuestion, moveToNextCategory, selectQuestionAnswer, answers } = useSurvey();
 
   // 현재 질문 데이터 가져오기
   const currentQuestionData = tasteQuestions[currentQuestion];
@@ -14,6 +14,7 @@ export const SurveyTaste = () => {
     if (currentQuestion === 9) {
       //최종 질문
       console.log(answers);
+      moveToNextCategory();
     } else {
       selectQuestionAnswer(currentQuestionData.id, answer);
     }
