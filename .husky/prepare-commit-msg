@@ -1,0 +1,10 @@
+COMMIT_MSG_FILE=$1
+
+# feat, fix, refactor, style, docs, test, chore → 각각 이모지 붙이기
+sed -i '' -E 's/^(feat:)/✨ \1/' "$COMMIT_MSG_FILE"       # 기능 추가
+sed -i '' -E 's/^(fix:)/🐛 \1/' "$COMMIT_MSG_FILE"        # 버그 수정
+sed -i '' -E 's/^(refactor:)/♻️ \1/' "$COMMIT_MSG_FILE"   # 리팩토링
+sed -i '' -E 's/^(style:)/🎨 \1/' "$COMMIT_MSG_FILE"      # CSS/UI 변경
+sed -i '' -E 's/^(docs:)/📝 \1/' "$COMMIT_MSG_FILE"       # 문서 작성/수정
+sed -i '' -E 's/^(test:)/✅ \1/' "$COMMIT_MSG_FILE"       # 테스트 관련
+sed -i '' -E 's/^(chore:)/🔧 \1/' "$COMMIT_MSG_FILE"      # 빌드/환경 설정
