@@ -1,6 +1,7 @@
 import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
 
+import cloverSvg from '@/assets/result/clover.svg';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 
 export const ResultHome = () => {
@@ -9,7 +10,10 @@ export const ResultHome = () => {
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="p-6 md:p-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl  border border-blue-100 shadow-lg">
           <span className="text-base md:text-lg text-gray-800  whitespace-pre-line ">
-            🍀결과 공개까지 기다려주셔서 정말 감사합니다!🍀{'\n'} 항해인 중 나랑 찰떡궁합인 사람들은 과연 누구일까요?
+            <img src={cloverSvg} alt="clover emoji" width="24" height="24" className="inline" />
+            결과 공개까지 기다려주셔서 정말 감사합니다!
+            <img src={cloverSvg} alt="clover emoji" width="24" height="24" className="inline" />
+            {'\n'} 항해인 중 나랑 찰떡궁합인 사람들은 과연 누구일까요?
           </span>
           <Link to={'/result/someone'} className="mt-8 flex items-center justify-end animate-bounce ">
             <span className="text-xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-br  from-blue-500 to-purple-900 font-extrabold ">
