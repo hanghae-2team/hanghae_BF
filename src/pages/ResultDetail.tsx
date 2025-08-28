@@ -1,11 +1,15 @@
 import { ChevronRight, MousePointerClick, PencilLine } from 'lucide-react';
 import { Link, useParams } from 'react-router';
 
+import cloverSvg from '@/assets/result/clover.svg';
+import TopThree from '@/components/result/TopThree';
+import usersRawData from '@/data/users.json';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Badge } from '@/elements/badge';
 import { Button } from '@/elements/button';
+import { Card, CardContent, CardHeader } from '@/elements/card';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/elements/tooltip';
-
+import { findUserById } from '@/utils/UserUtils';
 type UserData = {
   name: string;
   github: string;
@@ -15,7 +19,8 @@ type UserData = {
 
 export const ResultDetail = () => {
   const { id } = useParams();
-  const userData = getMockUserData(id as string);
+
+  const userData = findUserById(usersRawData, id);
 
   const best5: Omit<UserData, 'hobbies'>[] = getBest5User();
   const worst5: Omit<UserData, 'hobbies'>[] = getWorst5User();
@@ -55,16 +60,22 @@ export const ResultDetail = () => {
   };
 
   return (
-    <div>
-      <div className="p-4 rounded-sm bg-gray-50">
+    <div className="p-8 min-h-dvh bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="p-8 bg-white rounded-sm">
         <div className="flex gap-2 justify-center items-center">
           <Avatar className="size-12">
-            <AvatarImage src={userData.profileImage} />
+            <AvatarImage src={userData.image} />
             <AvatarFallback>{userData.name}</AvatarFallback>
           </Avatar>
-          <p className="grow">{userData.name}</p>
+          <div className="grow">
+            <p className="text-bold">{userData.name}</p>
+            <a href={userData.link} target="_blank" rel="noopener noreferrer">
+              <p className="text-xs text-gray-700 hover:underline">@{userData.id}</p>
+            </a>
+          </div>
+
           <Button
-            className="text-black text-sm bg-gray-200 cursor-pointer hover:bg-gray-200 hover:brightness-95 "
+            className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 cursor-pointer  hover:brightness-95 "
             onClick={() => {
               window.alert('롤링 페이퍼 작성');
             }}
@@ -76,38 +87,44 @@ export const ResultDetail = () => {
 
         <div className="mt-2">
           {userData.hobbies.map((hobby) => (
-            <Badge key={`${userData.github}-${hobby}`} className="mr-2">
+            <Badge key={`${userData.id}-${hobby}`} className="bg-gray-700 mr-2">
               {hobby}
             </Badge>
           ))}
         </div>
       </div>
-      <div className="p-4 rounded-sm">
+      <div className="p-4 rounded-sm flex flex-col md:flex-row">
         <div className="space-y-8">
-          <div className="text-3xl font-bold text-center">찰떡 궁합</div>
-          {renderList(best5)}
+          <Card>
+            <CardContent>
+              <div className="text-2xl font-bold">찰떡 궁합</div>
+              <TopThree users={best5.slice(2)} />
+              {renderList(best5.slice(3, 5))}
+            </CardContent>
+          </Card>
         </div>
         <div className="space-y-8 mt-8">
-          <div className="text-3xl font-bold text-center">시루떡 궁합</div>
-          {renderList(worst5)}
+          <Card>
+            <CardContent>
+              <div className="text-2xl font-bold">시루떡 궁합</div>
+              <TopThree users={worst5.slice(2)} />
+              {renderList(worst5.slice(3, 5))}
+            </CardContent>
+          </Card>
         </div>
       </div>
-      <div className="p-4 rounded-sm">
-        <div className="text-3xl font-bold text-center">롤링페이퍼</div>
-        <div className="p-6 text-center text-base whitespace-pre-line text-gray-600 bg-gray-50 rounded-sm mt-2">
-          수료일에 공개됩니다{'\n'}잠시만 기다려주세요🍀
-        </div>
-      </div>
+      <Card>
+        <CardHeader>
+          <div className="text-2xl font-bold ">롤링페이퍼</div>
+        </CardHeader>
+        <CardContent className="text-center m-8">
+          수료일에 공개됩니다{'\n'}잠시만 기다려주세요
+          <img src={cloverSvg} alt="클로버 이모지" className="inline" width={24} height={24} />
+        </CardContent>
+      </Card>
     </div>
   );
 };
-
-const getMockUserData = (githubId: string) => ({
-  name: `항해인`,
-  github: githubId,
-  profileImage: 'https://picsum.photos/200',
-  hobbies: ['취미1', '취미2', '취미3'],
-});
 
 const getBest5User = () => [
   {
