@@ -2,9 +2,13 @@ import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
 
 import cloverSvg from '@/assets/result/clover.svg';
+import usersRawData from '@/data/users.json';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
+import { convertRawDataToUsers } from '@/utils/UserUtils';
 
 export const ResultHome = () => {
+  const users = convertRawDataToUsers(usersRawData);
+
   return (
     <div className="p-6 bg-gray-50">
       <div className="max-w-7xl mx-auto space-y-8">
@@ -24,18 +28,18 @@ export const ResultHome = () => {
         </div>
 
         <div className="my-4 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-4">
-          {MOCK_DATAS.map((data) => (
-            <Link to={data.github} key={data.key}>
+          {Object.values(users).map((data) => (
+            <Link to={data.id} key={data.id}>
               <div className="group w-full flex justify-start gap-4 items-center p-4 rounded-sm border bg-white shadow-sm shadow-zinc-200 animate-fade-up transition-transform duration-300 ease-out hover:scale-105 hover:shadow-xl">
                 <Avatar className="size-16 sm:size-20 rounded-md">
-                  <AvatarImage src={data.profileImage} />
+                  <AvatarImage src={data.image} />
                   <AvatarFallback>{data.name}</AvatarFallback>
                 </Avatar>
                 <div>
                   <div className="md:text-base font-bold transition-colors group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 group-hover:bg-clip-text ">
                     {data.name}
                   </div>
-                  <div className="text-xs md:text-sm text-gray-500">@{data.github}</div>
+                  <div className="text-xs md:text-sm text-gray-500">@{data.id}</div>
                 </div>
               </div>
             </Link>
@@ -45,10 +49,3 @@ export const ResultHome = () => {
     </div>
   );
 };
-
-const MOCK_DATAS = Array.from({ length: 58 }).map((_, index) => ({
-  key: index,
-  name: `항해인${index}`,
-  github: `hanghae${index}`,
-  profileImage: 'https://picsum.photos/200',
-}));
