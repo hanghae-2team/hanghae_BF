@@ -1,6 +1,8 @@
 import { AlertCircle, Lock, User } from 'lucide-react';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
 
+import usersData from '@/data/users.json';
 import { Button } from '@/elements/button';
 import { Card, CardContent, CardDescription, CardHeader } from '@/elements/card';
 import { Input } from '@/elements/input';
@@ -18,6 +20,7 @@ interface LoginFormErrors {
 }
 
 const Login: React.FC = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState<LoginFormData>({
     name: '',
     userId: '',
@@ -62,16 +65,33 @@ const Login: React.FC = () => {
 
     setIsLoading(true);
 
-    // try {
-    //   // TODO: 실제 로그인 로직 구현
-    //   await new Promise((resolve) => setTimeout(resolve, 1000)); // 임시 딜레이
+    try {
+      // users.json에서 입력된 이름으로 사용자 찾기
+      const foundUser = Object.values(usersData).find(
+        (userData: { name: string; id: string }) => userData.name === formData.name
+      );
 
-    //   // 성공 시 처리 (예: 리다이렉트, 토큰 저장 등)
-    // } catch (error) {
-    //   setErrors({ general: '로그인에 실패했습니다. 다시 시도해주세요.' });
-    // } finally {
-    //   setIsLoading(false);
-    // }
+      if (!foundUser) {
+        setErrors({ name: '존재하지 않는 아이디입니다.' });
+        return;
+      }
+
+      // 찾은 사용자의 id와 입력된 userId(비밀번호) 비교
+      if (foundUser.id !== formData.userId) {
+        setErrors({ userId: '존재하지 않는 비밀번호입니다.' });
+        return;
+      }
+
+      // 로그인 성공
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // 임시 딜레이
+
+      // 로그인 성공 시 /hobby-select 페이지로 이동
+      navigate('/hobby-select');
+    } catch {
+      setErrors({ general: '로그인에 실패했습니다. 다시 시도해주세요.' });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
