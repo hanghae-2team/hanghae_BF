@@ -24,7 +24,7 @@ const hobbies: Hobby[] = [
     id: 'boardgame',
     name: '보드게임',
     category: '게임',
-    icon: '🎲',
+    icon: '/images/hobby/Game die.png',
     color: 'bg-blue-50 border-blue-200',
     hoverColor: 'bg-blue-100 border-blue-300',
     description: '전략과 재미의 보드게임',
@@ -33,7 +33,7 @@ const hobbies: Hobby[] = [
     id: 'console',
     name: '콘솔게임',
     category: '게임',
-    icon: '🎮',
+    icon: '/images/hobby/Video game.png',
     color: 'bg-green-50 border-green-200',
     hoverColor: 'bg-green-100 border-green-300',
     description: '콘솔로 즐기는 게임',
@@ -42,7 +42,7 @@ const hobbies: Hobby[] = [
     id: 'pcgame',
     name: 'PC게임',
     category: '게임',
-    icon: '💻',
+    icon: '/images/hobby/Joystick.png',
     color: 'bg-purple-50 border-purple-200',
     hoverColor: 'bg-purple-100 border-purple-300',
     description: 'PC로 즐기는 게임',
@@ -51,7 +51,7 @@ const hobbies: Hobby[] = [
     id: 'escape',
     name: '방탈출',
     category: '게임',
-    icon: '🚪',
+    icon: '/images/hobby/Door.png',
     color: 'bg-red-50 border-red-200',
     hoverColor: 'bg-red-100 border-red-300',
     description: '수수께끼를 풀어 탈출하기',
@@ -62,7 +62,7 @@ const hobbies: Hobby[] = [
     id: 'photography',
     name: '사진 찍기',
     category: '예술',
-    icon: '📷',
+    icon: '/images/hobby/Camera.png',
     color: 'bg-amber-50 border-amber-200',
     hoverColor: 'bg-amber-100 border-amber-300',
     description: '순간을 영원히 담기',
@@ -71,7 +71,7 @@ const hobbies: Hobby[] = [
     id: 'reading',
     name: '독서',
     category: '예술',
-    icon: '📚',
+    icon: '/images/hobby/Books.png',
     color: 'bg-indigo-50 border-indigo-200',
     hoverColor: 'bg-indigo-100 border-indigo-300',
     description: '지식과 상상력의 확장',
@@ -80,7 +80,7 @@ const hobbies: Hobby[] = [
     id: 'dance',
     name: '댄스',
     category: '예술',
-    icon: '💃',
+    icon: '/images/hobby/Dancing.png',
     color: 'bg-pink-50 border-pink-200',
     hoverColor: 'bg-pink-100 border-pink-300',
     description: '음악에 맞춰 춤추기',
@@ -89,7 +89,7 @@ const hobbies: Hobby[] = [
     id: 'kono',
     name: '코노',
     category: '예술',
-    icon: '🎭',
+    icon: '/images/hobby/Microphone.png',
     color: 'bg-orange-50 border-orange-200',
     hoverColor: 'bg-orange-100 border-orange-300',
     description: '창의적인 놀이',
@@ -98,7 +98,7 @@ const hobbies: Hobby[] = [
     id: 'coding',
     name: '코딩',
     category: '기술',
-    icon: '💻',
+    icon: '/images/hobby/Laptop.png',
     color: 'bg-gray-50 border-gray-200',
     hoverColor: 'bg-gray-100 border-gray-300',
     description: '논리적 사고와 창작',
@@ -106,19 +106,19 @@ const hobbies: Hobby[] = [
 
   // 음식/음료
   {
-    id: 'coffee',
-    name: '커피',
-    category: '음식',
-    icon: '☕',
+    id: 'soccer',
+    name: '축구',
+    category: '운동',
+    icon: '/images/hobby/Soccer ball.png',
     color: 'bg-amber-50 border-amber-200',
     hoverColor: 'bg-amber-100 border-amber-300',
-    description: '커피 향을 즐기기',
+    description: '축구를 즐기기',
   },
   {
     id: 'beer',
-    name: '맥주',
+    name: '음주',
     category: '음식',
-    icon: '🍺',
+    icon: '/images/hobby/Beer mug.png',
     color: 'bg-yellow-50 border-yellow-200',
     hoverColor: 'bg-yellow-100 border-yellow-300',
     description: '맥주와 함께하는 시간',
@@ -129,7 +129,7 @@ const hobbies: Hobby[] = [
     id: 'hiking',
     name: '등산',
     category: '운동',
-    icon: '🏔️',
+    icon: '/images/hobby/Snow-capped mountain.png',
     color: 'bg-green-50 border-green-200',
     hoverColor: 'bg-green-100 border-green-300',
     description: '산을 오르며 자연을 느끼기',
@@ -138,7 +138,7 @@ const hobbies: Hobby[] = [
     id: 'climbing',
     name: '클라이밍',
     category: '운동',
-    icon: '🧗‍♀️',
+    icon: '/images/hobby/Climbing.png',
     color: 'bg-red-50 border-red-200',
     hoverColor: 'bg-red-100 border-red-300',
     description: '벽을 타며 도전하기',
@@ -147,7 +147,7 @@ const hobbies: Hobby[] = [
     id: 'walking',
     name: '산책',
     category: '운동',
-    icon: '🚶‍♀️',
+    icon: '/images/hobby/Walking.png',
     color: 'bg-blue-50 border-blue-200',
     hoverColor: 'bg-blue-100 border-blue-300',
     description: '천천히 걸으며 여유를 즐기기',
@@ -156,7 +156,7 @@ const hobbies: Hobby[] = [
     id: 'baseball',
     name: '야구',
     category: '운동',
-    icon: '⚾',
+    icon: '/images/hobby/Baseball.png',
     color: 'bg-green-50 border-green-200',
     hoverColor: 'bg-green-100 border-green-300',
     description: '야구로 운동하기',
@@ -165,7 +165,7 @@ const hobbies: Hobby[] = [
     id: 'exercise',
     name: '운동',
     category: '운동',
-    icon: '💪',
+    icon: '/images/hobby/Tennis.png',
     color: 'bg-red-50 border-red-200',
     hoverColor: 'bg-red-100 border-red-300',
     description: '체력 단련과 건강 관리',
@@ -176,7 +176,7 @@ const hobbies: Hobby[] = [
     id: 'anime',
     name: '애니메이션',
     category: '엔터테인먼트',
-    icon: '🎬',
+    icon: '/images/hobby/Television.png',
     color: 'bg-purple-50 border-purple-200',
     hoverColor: 'bg-purple-100 border-purple-300',
     description: '애니메이션 감상하기',
@@ -185,7 +185,7 @@ const hobbies: Hobby[] = [
     id: 'movie',
     name: '영화',
     category: '엔터테인먼트',
-    icon: '🎭',
+    icon: '/images/hobby/Clapper board.png',
     color: 'bg-slate-50 border-slate-200',
     hoverColor: 'bg-slate-100 border-slate-300',
     description: '다양한 이야기와 감동',
@@ -194,7 +194,7 @@ const hobbies: Hobby[] = [
     id: 'knitting',
     name: '뜨개질',
     category: '예술',
-    icon: '🧶',
+    icon: '/images/hobby/Yarn.png',
     color: 'bg-pink-50 border-pink-200',
     hoverColor: 'bg-pink-100 border-pink-300',
     description: '뜨개질로 창작하기',
@@ -203,7 +203,7 @@ const hobbies: Hobby[] = [
     id: 'travel',
     name: '여행',
     category: '여행',
-    icon: '✈️',
+    icon: '/images/hobby/Airplane.png',
     color: 'bg-teal-50 border-teal-200',
     hoverColor: 'bg-teal-100 border-teal-300',
     description: '새로운 경험과 발견',
@@ -212,7 +212,7 @@ const hobbies: Hobby[] = [
     id: 'camping',
     name: '캠핑',
     category: '여행',
-    icon: '🏕️',
+    icon: '/images/hobby/Camping.png',
     color: 'bg-green-50 border-green-200',
     hoverColor: 'bg-green-100 border-green-300',
     description: '자연 속에서 캠핑하기',
@@ -223,7 +223,7 @@ const hobbies: Hobby[] = [
     id: 'cooking',
     name: '요리',
     category: '음식',
-    icon: '👨‍🍳',
+    icon: '/images/hobby/Cook.png',
     color: 'bg-orange-50 border-orange-200',
     hoverColor: 'bg-orange-100 border-orange-300',
     description: '맛과 창의성의 조화',
@@ -232,7 +232,7 @@ const hobbies: Hobby[] = [
     id: 'sleeping',
     name: '잠자기',
     category: '휴식',
-    icon: '😴',
+    icon: '/images/hobby/Yawning face.png',
     color: 'bg-blue-50 border-blue-200',
     hoverColor: 'bg-blue-100 border-blue-300',
     description: '충분한 휴식과 수면',
@@ -241,7 +241,7 @@ const hobbies: Hobby[] = [
     id: 'cafe',
     name: '카페 탐방',
     category: '음식',
-    icon: '🏪',
+    icon: '/images/hobby/Hot beverage.png',
     color: 'bg-amber-50 border-amber-200',
     hoverColor: 'bg-amber-100 border-amber-300',
     description: '다양한 카페를 찾아다니기',
@@ -250,7 +250,7 @@ const hobbies: Hobby[] = [
     id: 'restaurant',
     name: '맛집 탐방',
     category: '음식',
-    icon: '🍽️',
+    icon: '/images/hobby/Fork and knife with plate.png',
     color: 'bg-red-50 border-red-200',
     hoverColor: 'bg-red-100 border-red-300',
     description: '맛있는 음식점 찾기',
@@ -261,7 +261,7 @@ const hobbies: Hobby[] = [
     id: 'musical',
     name: '뮤지컬',
     category: '문화',
-    icon: '🎪',
+    icon: '/images/hobby/Circus tent.png',
     color: 'bg-purple-50 border-purple-200',
     hoverColor: 'bg-purple-100 border-purple-300',
     description: '뮤지컬 공연 감상',
@@ -270,7 +270,7 @@ const hobbies: Hobby[] = [
     id: 'writing',
     name: '글쓰기',
     category: '예술',
-    icon: '✍️',
+    icon: '/images/hobby/Pencil.png',
     color: 'bg-indigo-50 border-indigo-200',
     hoverColor: 'bg-indigo-100 border-indigo-300',
     description: '생각과 감정을 글로 표현',
@@ -279,7 +279,7 @@ const hobbies: Hobby[] = [
     id: 'crane',
     name: '인형 뽑기',
     category: '게임',
-    icon: '🎯',
+    icon: '/images/hobby/Teddy bear.png',
     color: 'bg-pink-50 border-pink-200',
     hoverColor: 'bg-pink-100 border-pink-300',
     description: '인형 뽑기 게임',
@@ -288,7 +288,7 @@ const hobbies: Hobby[] = [
     id: 'drawing',
     name: '그림 그리기',
     category: '예술',
-    icon: '🎨',
+    icon: '/images/hobby/Artist palette.png',
     color: 'bg-pink-50 border-pink-200',
     hoverColor: 'bg-pink-100 border-pink-300',
     description: '색과 선으로 표현하기',
@@ -299,7 +299,7 @@ const hobbies: Hobby[] = [
     id: 'music',
     name: '음악듣기',
     category: '음악',
-    icon: '🎵',
+    icon: '/images/hobby/Headphone.png',
     color: 'bg-indigo-50 border-indigo-200',
     hoverColor: 'bg-indigo-100 border-indigo-300',
     description: '다양한 음악 감상하기',
@@ -402,22 +402,22 @@ export const HobbySelect = () => {
                   toggleHobby(hobby.id);
                 }}
                 className={`
-                  relative z-10
-                  h-auto min-h-[80px] sm:min-h-[90px] md:min-h-[100px]
-                  flex flex-col items-center justify-center gap-2
-                  p-3 sm:p-4
-                  pointer-events-auto
-                  ${
-                    isSelected
-                      ? 'bg-gray-700 text-white shadow-lg scale-105'
-                      : isDisabled
-                        ? 'opacity-50 cursor-not-allowed bg-white'
-                        : 'bg-white hover:bg-gray-50 hover:scale-105 hover:shadow-md'
-                  }
-                  transition-all duration-200
-                `}
+                    relative z-10
+                    h-auto min-h-[80px] sm:min-h-[90px] md:min-h-[100px]
+                    flex flex-col items-center justify-center gap-2
+                    p-3 sm:p-4
+                    pointer-events-auto
+                    ${
+                      isSelected
+                        ? 'bg-gray-700 text-white shadow-lg scale-105'
+                        : isDisabled
+                          ? 'opacity-50 cursor-not-allowed bg-white'
+                          : 'bg-white hover:bg-gray-50 hover:scale-105 hover:shadow-md'
+                    }
+                    transition-all duration-200
+                  `}
               >
-                <span className="text-xl sm:text-2xl md:text-3xl">{hobby.icon}</span>
+                <img src={hobby.icon} alt={hobby.name} className="w-10 h-10 object-contain" />
                 <div className="text-xs sm:text-sm font-medium leading-tight">{hobby.name}</div>
                 {isSelected && (
                   <div className="w-4 h-4 rounded-full bg-white flex items-center justify-center">
@@ -447,7 +447,8 @@ export const HobbySelect = () => {
                       variant="secondary"
                       className="inline-flex items-center gap-2 px-3 py-2 text-sm"
                     >
-                      {hobby?.icon} {hobby?.name}
+                      {hobby?.icon && <img src={hobby.icon} alt={hobby.name} className="w-5 h-5 object-contain" />}{' '}
+                      {hobby?.name}
                     </Badge>
                   );
                 })}
