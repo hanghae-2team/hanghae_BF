@@ -2,6 +2,7 @@ import { ChevronRight, MousePointerClick, PencilLine } from 'lucide-react';
 import { Link, useParams } from 'react-router';
 
 import cloverSvg from '@/assets/result/clover.svg';
+import { MatchingDialog } from '@/components/MatchingDialog';
 import TopThree from '@/components/result/TopThree';
 import usersRawData from '@/data/users.json';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
@@ -29,31 +30,38 @@ export const ResultDetail = () => {
     return (
       <ul className="space-y-4">
         {users.map((user, index) => (
-          <li key={`best-${user.name}`} className="flex items-center gap-2">
-            <p className="rounded-full font-bold">{index + startRank}</p>
-            <Avatar>
-              <AvatarImage src={user.profileImage} />
-              <AvatarFallback>{user.name}</AvatarFallback>
-            </Avatar>
+          <MatchingDialog
+            key={`best-${user.name}-trigger`}
+            renderTrigger={() => {
+              return (
+                <li key={`best-${user.name}`} className="flex items-center gap-2">
+                  <p className="rounded-full font-bold">{index + startRank}</p>
+                  <Avatar>
+                    <AvatarImage src={user.profileImage} />
+                    <AvatarFallback>{user.name}</AvatarFallback>
+                  </Avatar>
 
-            <div className="grow-1">
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link to={`/result/${user.github}`} className="text-sm hover:underline">
-                    {user.name}
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent className="flex items-center">
-                  {user.name}의 결과보기
-                  <MousePointerClick size={12} />
-                </TooltipContent>
-              </Tooltip>
-              <p className="text-xs text-gray-500">{user.github}</p>
-            </div>
-            <Button className="bg-transparent shadow-none cursor-pointer hover:bg-transparent ">
-              <ChevronRight size={20} stroke="#303030" />
-            </Button>
-          </li>
+                  <div className="grow-1">
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <Link to={`/result/${user.github}`} className="text-sm hover:underline">
+                          {user.name}
+                        </Link>
+                      </TooltipTrigger>
+                      <TooltipContent className="flex items-center">
+                        {user.name}의 결과보기
+                        <MousePointerClick size={12} />
+                      </TooltipContent>
+                    </Tooltip>
+                    <p className="text-xs text-gray-500">{user.github}</p>
+                  </div>
+                  {/* <Button className="bg-transparent shadow-none cursor-pointer hover:bg-transparent "> */}
+                  <ChevronRight size={20} stroke="#303030" />
+                  {/* </Button> */}
+                </li>
+              );
+            }}
+          />
         ))}
       </ul>
     );
@@ -95,7 +103,7 @@ export const ResultDetail = () => {
           </div>
         </CardContent>
       </Card>
-      <div className="rounded-sm flex gap-4 flex-col md:flex-row space-y-4 md:space-y-0">
+      <div className="rounded-sm flex flex-col gap-4 md:flex-row  md:space-y-0">
         <Card className="grow-1">
           <CardContent>
             <div className="text-2xl font-bold">찰떡 궁합</div>
@@ -115,7 +123,7 @@ export const ResultDetail = () => {
         <CardHeader>
           <div className="text-2xl font-bold ">롤링페이퍼</div>
         </CardHeader>
-        <CardContent className="text-center m-8">
+        <CardContent className="text-center my-4 mx-auto">
           수료일에 공개됩니다{'\n'}잠시만 기다려주세요
           <img src={cloverSvg} alt="클로버 이모지" className="inline" width={24} height={24} />
         </CardContent>

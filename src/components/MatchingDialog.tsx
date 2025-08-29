@@ -1,6 +1,7 @@
-import { Button } from '@/elements/button';
+import { type ReactNode, useState } from 'react';
+
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/elements/dialog';
-import { useState } from 'react';
+
 import { ComparisonRadarChart } from './RadarChart';
 
 interface UserData {
@@ -25,7 +26,11 @@ const DUMMY_USER2_DATA: UserData = {
   personality: 70, // 내향적이지만 따뜻함
 };
 
-export const MatchingDialog = () => {
+interface Props {
+  renderTrigger: () => ReactNode;
+}
+
+export const MatchingDialog = ({ renderTrigger }: Props) => {
   const [isMatchingOpen, setIsMatchingOpen] = useState(false);
 
   // 궁합 점수 계산
@@ -44,7 +49,8 @@ export const MatchingDialog = () => {
   return (
     <Dialog open={isMatchingOpen} onOpenChange={setIsMatchingOpen}>
       <DialogTrigger asChild className="cursor-pointer">
-        <Button>매칭 모달 임시 버튼</Button>
+        {renderTrigger()}
+        {/* <Button>매칭 모달 임시 버튼</Button> */}
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] overflow-y-auto overflow-x-hidden" style={{ scrollbarWidth: 'none' }}>
         <DialogHeader>

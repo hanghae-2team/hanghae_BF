@@ -1,3 +1,4 @@
+import { MatchingDialog } from '@/components/MatchingDialog';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { cn } from '@/lib/utils';
 
@@ -23,38 +24,43 @@ export default function TopThree({ users }: Props) {
   return (
     <div className="flex justify-center items-end gap-4 p-8 m-4">
       {users.map((user, index) => (
-        <div key={user.name} className={`flex flex-col items-center ${rankingStyle[index].order}`}>
-          {/* 아바타 */}
-          <div className="relative">
-            <div
-              className={cn(
-                'absolute size-18 rounded-full bg-gradient-to-br shadow-md shadow-slate-300',
-                rankingStyle[index].gradientColor
-              )}
-            ></div>
-            <Avatar className={'relative w-16 h-16 m-1'}>
-              <AvatarImage src={user.profileImage} />
-              <AvatarFallback>{user.name[0]}</AvatarFallback>
-            </Avatar>
-          </div>
-          {/* 순위 배지 */}
+        <MatchingDialog
+          key={user.name}
+          renderTrigger={() => (
+            <div key={user.name} className={`flex flex-col items-center ${rankingStyle[index].order}`}>
+              {/* 아바타 */}
+              <div className="relative">
+                <div
+                  className={cn(
+                    'absolute size-18 rounded-full bg-gradient-to-br shadow-md shadow-slate-300',
+                    rankingStyle[index].gradientColor
+                  )}
+                ></div>
+                <Avatar className={'relative w-16 h-16 m-1'}>
+                  <AvatarImage src={user.profileImage} />
+                  <AvatarFallback>{user.name[0]}</AvatarFallback>
+                </Avatar>
+              </div>
+              {/* 순위 배지 */}
 
-          <div className="-mt-4 mb-1 z-1">
-            <span
-              className={cn(
-                'inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white rounded-full',
-                rankingStyle[index].baseColor
-              )}
-            >
-              {index + 1}
-            </span>
-          </div>
-          {/* 이름 */}
-          <div className="mt-1 text-center">
-            <div className="font-semibold text-sm">{user.name}</div>
-            <div className="text-xs text-gray-500">@{user.github}</div>
-          </div>
-        </div>
+              <div className="-mt-4 mb-1 z-1">
+                <span
+                  className={cn(
+                    'inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white rounded-full',
+                    rankingStyle[index].baseColor
+                  )}
+                >
+                  {index + 1}
+                </span>
+              </div>
+              {/* 이름 */}
+              <div className="mt-1 text-center">
+                <div className="font-semibold text-sm">{user.name}</div>
+                <div className="text-xs text-gray-500">@{user.github}</div>
+              </div>
+            </div>
+          )}
+        />
       ))}
     </div>
   );
