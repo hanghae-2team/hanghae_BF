@@ -7,7 +7,7 @@ interface Props {
 
 const rankingStyle: Record<number, { order: string; gradientColor: string; baseColor: string }> = {
   0: {
-    order: 'order-2  scale-150',
+    order: 'order-2  scale-130',
     gradientColor: 'from-blue-50 via-slate-100 to-purple-200',
     baseColor: 'bg-purple-200',
   },
@@ -21,7 +21,7 @@ const rankingStyle: Record<number, { order: string; gradientColor: string; baseC
 
 export default function TopThree({ users }: Props) {
   return (
-    <div className="flex justify-center items-end gap-4">
+    <div className="flex justify-center items-end gap-4 p-8 m-4">
       {users.map((user, index) => (
         <div key={user.name} className={`flex flex-col items-center ${rankingStyle[index].order}`}>
           {/* 아바타 */}

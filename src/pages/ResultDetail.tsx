@@ -25,12 +25,12 @@ export const ResultDetail = () => {
   const best5: Omit<UserData, 'hobbies'>[] = getBest5User();
   const worst5: Omit<UserData, 'hobbies'>[] = getWorst5User();
 
-  const renderList = (users: Omit<UserData, 'hobbies'>[]) => {
+  const renderList = (users: Omit<UserData, 'hobbies'>[], startRank: number = 1) => {
     return (
       <ul className="space-y-4">
         {users.map((user, index) => (
           <li key={`best-${user.name}`} className="flex items-center gap-2">
-            <p className="rounded-full font-bold">{index + 1}</p>
+            <p className="rounded-full font-bold">{index + startRank}</p>
             <Avatar>
               <AvatarImage src={user.profileImage} />
               <AvatarFallback>{user.name}</AvatarFallback>
@@ -60,60 +60,58 @@ export const ResultDetail = () => {
   };
 
   return (
-    <div className="p-8 min-h-dvh bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-      <div className="p-8 bg-white rounded-sm">
-        <div className="flex gap-2 justify-center items-center">
-          <Avatar className="size-12">
-            <AvatarImage src={userData.image} />
-            <AvatarFallback>{userData.name}</AvatarFallback>
-          </Avatar>
-          <div className="grow">
-            <p className="text-bold">{userData.name}</p>
-            <a href={userData.link} target="_blank" rel="noopener noreferrer">
-              <p className="text-xs text-gray-700 hover:underline">@{userData.id}</p>
-            </a>
+    <div className="space-y-4 p-8 min-h-dvh bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <Card>
+        <CardContent>
+          <div className="flex gap-2 justify-center items-center">
+            <Avatar className="size-12">
+              <AvatarImage src={userData.image} />
+              <AvatarFallback>{userData.name}</AvatarFallback>
+            </Avatar>
+            <div className="grow">
+              <p className="text-bold">{userData.name}</p>
+              <a href={userData.link} target="_blank" rel="noopener noreferrer">
+                <p className="text-xs text-gray-700 hover:underline">@{userData.id}</p>
+              </a>
+            </div>
+
+            <Button
+              className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 cursor-pointer  hover:brightness-95 "
+              onClick={() => {
+                window.alert('롤링 페이퍼 작성');
+              }}
+            >
+              <PencilLine />
+              롤링페이퍼 쓰기
+            </Button>
           </div>
 
-          <Button
-            className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 cursor-pointer  hover:brightness-95 "
-            onClick={() => {
-              window.alert('롤링 페이퍼 작성');
-            }}
-          >
-            <PencilLine />
-            롤링페이퍼 쓰기
-          </Button>
-        </div>
-
-        <div className="mt-2">
-          {userData.hobbies.map((hobby) => (
-            <Badge key={`${userData.id}-${hobby}`} className="bg-gray-700 mr-2">
-              {hobby}
-            </Badge>
-          ))}
-        </div>
+          <div className="mt-2">
+            {userData.hobbies.map((hobby) => (
+              <Badge key={`${userData.id}-${hobby}`} className="bg-gray-700 mr-2">
+                {hobby}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+      <div className="rounded-sm flex gap-4 flex-col md:flex-row space-y-4 md:space-y-0">
+        <Card className="grow-1">
+          <CardContent>
+            <div className="text-2xl font-bold">찰떡 궁합</div>
+            <TopThree users={best5.slice(2)} />
+            {renderList(best5.slice(3, 5), 4)}
+          </CardContent>
+        </Card>
+        <Card className="grow-1">
+          <CardContent>
+            <div className="text-2xl font-bold">시루떡 궁합</div>
+            <TopThree users={worst5.slice(2)} />
+            {renderList(worst5.slice(3, 5), 4)}
+          </CardContent>
+        </Card>
       </div>
-      <div className="p-4 rounded-sm flex flex-col md:flex-row">
-        <div className="space-y-8">
-          <Card>
-            <CardContent>
-              <div className="text-2xl font-bold">찰떡 궁합</div>
-              <TopThree users={best5.slice(2)} />
-              {renderList(best5.slice(3, 5))}
-            </CardContent>
-          </Card>
-        </div>
-        <div className="space-y-8 mt-8">
-          <Card>
-            <CardContent>
-              <div className="text-2xl font-bold">시루떡 궁합</div>
-              <TopThree users={worst5.slice(2)} />
-              {renderList(worst5.slice(3, 5))}
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-      <Card>
+      <Card className="gap-2">
         <CardHeader>
           <div className="text-2xl font-bold ">롤링페이퍼</div>
         </CardHeader>
