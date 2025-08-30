@@ -4,7 +4,6 @@ import { Badge } from '@/elements/badge';
 import { Button } from '@/elements/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/elements/card';
 import { Label } from '@/elements/label';
-import { Progress } from '@/elements/progress';
 
 // 취미 데이터 타입 정의
 interface Hobby {
@@ -374,7 +373,6 @@ export const HobbySelect = () => {
                 </CardDescription>
               </Label>
             </div>
-            <Progress value={(selectedHobbies.length / MAX_SELECTIONS) * 100} className="h-3" />
             {selectedHobbies.length >= MAX_SELECTIONS && (
               <p className="text-sm text-amber-600 mt-2 text-center">
                 최대 {MAX_SELECTIONS}개까지 선택되었습니다. 더 선택하려면 기존 선택을 해제해주세요.
