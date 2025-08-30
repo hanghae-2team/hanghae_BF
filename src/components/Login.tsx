@@ -2,6 +2,7 @@ import { AlertCircle, Lock, User } from 'lucide-react';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 
+import { useAuth } from '@/contexts/AuthContext';
 import usersData from '@/data/users.json';
 import { Button } from '@/elements/button';
 import { Card, CardContent, CardDescription, CardHeader } from '@/elements/card';
@@ -21,6 +22,7 @@ interface LoginFormErrors {
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
+  const { login } = useAuth(); // AuthContext에서 login 함수 가져오기
   const [formData, setFormData] = useState<LoginFormData>({
     name: '',
     userId: '',
@@ -84,6 +86,14 @@ const Login: React.FC = () => {
 
       // 로그인 성공
       await new Promise((resolve) => setTimeout(resolve, 1000)); // 임시 딜레이
+
+      // AuthContext에 사용자 정보 저장
+      login({
+        name: foundUser.name,
+        id: foundUser.id,
+        image: foundUser.image,
+        link: foundUser.link,
+      });
 
       // 로그인 성공 시 /hobby-select 페이지로 이동
       navigate('/hobby-select');
