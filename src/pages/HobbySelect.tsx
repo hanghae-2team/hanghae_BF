@@ -405,6 +405,7 @@ export const HobbySelect = () => {
                     flex flex-col items-center justify-center gap-2
                     p-3 sm:p-4
                     pointer-events-auto
+                    cursor-pointer
                     ${
                       isSelected
                         ? 'bg-gray-700 text-white shadow-lg scale-105'
