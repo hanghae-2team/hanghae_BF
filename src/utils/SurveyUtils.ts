@@ -70,3 +70,20 @@ export const SURVEY_PERSONALITY_OPTIONS = [
   { value: 4, label: '그렇지 않다' },
   { value: 5, label: '매우 그렇지 않다' },
 ];
+
+// 답변을 카테고리별로 분류
+export const categorizedAnswers = (answers: Record<string, number>) =>
+  Object.entries(answers).reduce(
+    (acc, [questionNum, value]) => {
+      const num = parseInt(questionNum);
+      if (num <= 10) {
+        acc.personality.push(value);
+      } else if (num <= 20) {
+        acc.taste.push(value);
+      } else if (num <= 30) {
+        acc.values.push(value);
+      }
+      return acc;
+    },
+    { personality: [] as number[], taste: [] as number[], values: [] as number[] }
+  );

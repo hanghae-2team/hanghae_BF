@@ -10,6 +10,7 @@ import { Card, CardContent } from '@/elements/card';
 import { Input } from '@/elements/input';
 import { Label } from '@/elements/label';
 import { Layout } from '@/elements/layout';
+import { PATH } from '@/routers/router';
 
 interface LoginFormData {
   name: string;
@@ -41,7 +42,11 @@ export const Login = () => {
     },
     onSuccess: (res) => {
       login(res.user);
-      navigate('/hobby-select');
+      if (res.user?.isCompleted) {
+        navigate(PATH.SURVEY_COMPLETE());
+      } else {
+        navigate(PATH.HOBBY_SELECT());
+      }
     },
     onError: () => {
       setErrors({ general: '로그인에 실패했습니다. 다시 시도해주세요.' });
@@ -151,97 +156,98 @@ export const Login = () => {
           </div>
 
           {/* 기존 카드 스타일 유지 */}
-          <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm border-0 shadow-md">
-            <CardContent>
-              <div className="space-y-4">
-                {/* 이름 입력 필드 - 약간의 개선 */}
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-sm font-medium">
-                    이름
-                  </Label>
-                  <div className="relative group">
-                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 h-4 w-4 transition-colors" />
-                    <Input
-                      id="name"
-                      type="text"
-                      placeholder="이름을 입력하세요"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className={`text-sm pl-10 transition-all ${errors.name ? 'border-red-500 focus-visible:border-red-500' : 'focus-visible:border-blue-500'}`}
-                      disabled={isLoading}
-                    />
+          <form onSubmit={handleSubmit}>
+            <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm border-0 shadow-md">
+              <CardContent>
+                <div className="space-y-4">
+                  {/* 이름 입력 필드 - 약간의 개선 */}
+                  <div className="space-y-2">
+                    <Label htmlFor="name" className="text-sm font-medium">
+                      이름
+                    </Label>
+                    <div className="relative group">
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 h-4 w-4 transition-colors" />
+                      <Input
+                        id="name"
+                        type="text"
+                        placeholder="이름을 입력하세요"
+                        value={formData.name}
+                        onChange={(e) => handleInputChange('name', e.target.value)}
+                        className={`text-sm pl-10 transition-all ${errors.name ? 'border-red-500 focus-visible:border-red-500' : 'focus-visible:border-blue-500'}`}
+                        disabled={isLoading}
+                      />
+                    </div>
+                    {errors.name && (
+                      <div className="flex items-center gap-2 text-sm text-red-500">
+                        <AlertCircle className="h-4 w-4" />
+                        {errors.name}
+                      </div>
+                    )}
                   </div>
-                  {errors.name && (
-                    <div className="flex items-center gap-2 text-sm text-red-500">
+
+                  {/* 유저 아이디 입력 필드 - 약간의 개선 */}
+                  <div className="space-y-2">
+                    <Label htmlFor="userId" className="text-sm font-medium">
+                      github 아이디
+                    </Label>
+                    <div className="relative group">
+                      <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 h-4 w-4 transition-colors" />
+                      <Input
+                        id="userId"
+                        type={showPassword ? 'text' : 'password'}
+                        placeholder="깃허브 아이디를 입력하세요"
+                        value={formData.userId}
+                        onChange={(e) => handleInputChange('userId', e.target.value)}
+                        className={`text-sm pl-10 pr-10 transition-all ${errors.userId ? 'border-red-500 focus-visible:border-red-500' : 'focus-visible:border-blue-500'}`}
+                        disabled={isLoading}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 focus:outline-none"
+                      >
+                        {showPassword ? (
+                          <EyeOff className="h-4 w-4 transition-colors" />
+                        ) : (
+                          <Eye className="h-4 w-4 transition-colors" />
+                        )}
+                      </button>
+                    </div>
+                    {errors.userId && (
+                      <div className="flex items-center gap-2 text-sm text-red-500">
+                        <AlertCircle className="h-4 w-4" />
+                        {errors.userId}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* 일반 에러 메시지 */}
+                  {errors.general && (
+                    <div className="flex items-center gap-2 text-sm text-red-500 bg-red-50 p-3 rounded-md">
                       <AlertCircle className="h-4 w-4" />
-                      {errors.name}
+                      {errors.general}
                     </div>
                   )}
+
+                  {/* 로그인 버튼 - 약간의 개선 */}
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 shadow-lg hover:shadow-xl transition-all duration-200"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? (
+                      <div className="flex items-center gap-2">
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                        로그인 중...
+                      </div>
+                    ) : (
+                      '로그인'
+                    )}
+                  </Button>
                 </div>
-
-                {/* 유저 아이디 입력 필드 - 약간의 개선 */}
-                <div className="space-y-2">
-                  <Label htmlFor="userId" className="text-sm font-medium">
-                    github 아이디
-                  </Label>
-                  <div className="relative group">
-                    <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 h-4 w-4 transition-colors" />
-                    <Input
-                      id="userId"
-                      type={showPassword ? 'text' : 'password'}
-                      placeholder="깃허브 아이디를 입력하세요"
-                      value={formData.userId}
-                      onChange={(e) => handleInputChange('userId', e.target.value)}
-                      className={`text-sm pl-10 pr-10 transition-all ${errors.userId ? 'border-red-500 focus-visible:border-red-500' : 'focus-visible:border-blue-500'}`}
-                      disabled={isLoading}
-                    />
-                    <button
-                      type="button"
-                      onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 focus:outline-none"
-                    >
-                      {showPassword ? (
-                        <EyeOff className="h-4 w-4 transition-colors" />
-                      ) : (
-                        <Eye className="h-4 w-4 transition-colors" />
-                      )}
-                    </button>
-                  </div>
-                  {errors.userId && (
-                    <div className="flex items-center gap-2 text-sm text-red-500">
-                      <AlertCircle className="h-4 w-4" />
-                      {errors.userId}
-                    </div>
-                  )}
-                </div>
-
-                {/* 일반 에러 메시지 */}
-                {errors.general && (
-                  <div className="flex items-center gap-2 text-sm text-red-500 bg-red-50 p-3 rounded-md">
-                    <AlertCircle className="h-4 w-4" />
-                    {errors.general}
-                  </div>
-                )}
-
-                {/* 로그인 버튼 - 약간의 개선 */}
-                <Button
-                  type="submit"
-                  onClick={handleSubmit}
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 shadow-lg hover:shadow-xl transition-all duration-200"
-                  disabled={isLoading}
-                >
-                  {isLoading ? (
-                    <div className="flex items-center gap-2">
-                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
-                      로그인 중...
-                    </div>
-                  ) : (
-                    '로그인'
-                  )}
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </form>
         </div>
       </div>
     </Layout>

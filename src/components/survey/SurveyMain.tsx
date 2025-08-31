@@ -1,4 +1,3 @@
-import { SurveyComplete } from '@/components/survey/category/SurveyComplete';
 import { SurveyPersonality } from '@/components/survey/category/SurveyPersonality';
 import { SurveyStart } from '@/components/survey/category/SurveyStart';
 import { SurveyTaste } from '@/components/survey/category/SurveyTaste';
@@ -18,8 +17,6 @@ export const SurveyMain = () => {
       return <SurveyValues />;
     case 'taste':
       return <SurveyTaste />;
-    case 'complete':
-      return <SurveyComplete />;
     default:
       return <SurveyStart />;
   }

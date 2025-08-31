@@ -11,6 +11,7 @@ import { ResultHome } from '@/pages/ResultHome';
 import { RollingList } from '@/pages/RollingList';
 import { Splash } from '@/pages/Splash';
 import { Survey } from '@/pages/Survey';
+import { SurveyComplete } from '@/pages/SurveyComplete';
 
 export const PATH = {
   SPLASH: () => '/',
@@ -19,6 +20,7 @@ export const PATH = {
   RESULT_HOME: () => '/result',
   RESULT_DETAIL: () => '/result/:id',
   SURVEY: () => '/survey',
+  SURVEY_COMPLETE: () => '/survey-complete',
   HOBBY_SELECT: () => '/hobby-select',
   NOT_FOUND: () => '*',
 };
@@ -64,6 +66,14 @@ const router = createBrowserRouter([
         element: (
           <ErrorBoundary fallback={<Error />}>
             <Survey />
+          </ErrorBoundary>
+        ),
+      },
+      {
+        path: PATH.SURVEY_COMPLETE(),
+        element: (
+          <ErrorBoundary fallback={<Error />}>
+            <SurveyComplete />
           </ErrorBoundary>
         ),
       },

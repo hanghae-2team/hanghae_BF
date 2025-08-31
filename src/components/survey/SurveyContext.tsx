@@ -1,4 +1,9 @@
 import { createContext, useContext, useState } from 'react';
+import { useNavigate } from 'react-router';
+
+import { useSaveSurveyResult } from '@/apis/surveys';
+import { useAuth } from '@/contexts/AuthContext';
+import { PATH } from '@/routers/router';
 
 interface SurveyState {
   currentCategory: 'start' | 'personality' | 'values' | 'taste' | 'complete';
@@ -10,12 +15,14 @@ interface SurveyContextType extends SurveyState {
   moveToNextCategory: () => void;
   selectQuestionAnswer: (questionId: number, answer: number) => void;
   answers: Record<string, number>;
-  resetSurvey: () => void;
 }
 
 const SurveyContext = createContext<SurveyContextType | undefined>(undefined);
 
 export const SurveyProvider = ({ children }: { children: React.ReactNode }) => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
   const [survey, setSurvey] = useState<SurveyState>({
     currentCategory: 'start',
     currentQuestion: 0,
@@ -33,6 +40,8 @@ export const SurveyProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
+  const { mutate: saveSurveyResult, isPending } = useSaveSurveyResult();
+
   /** 다음 카테고리 이동 */
   const moveToNextCategory = () => {
     const categories = ['personality', 'values', 'taste'];
@@ -45,8 +54,15 @@ export const SurveyProvider = ({ children }: { children: React.ReactNode }) => {
         currentQuestion: 0,
       }));
     } else {
-      // 모든 카테고리가 끝나면 완료 상태로 이동
-      setSurvey((prev) => ({ ...prev, currentCategory: 'complete' }));
+      if (isPending) return; // 설문 결과 저장 중에 중복 저장 방지
+      saveSurveyResult(
+        { userId: user?.id ?? '', answers },
+        {
+          onSuccess: () => {
+            navigate(PATH.SURVEY_COMPLETE());
+          },
+        }
+      );
     }
   };
 
@@ -56,18 +72,12 @@ export const SurveyProvider = ({ children }: { children: React.ReactNode }) => {
     nextQuestion();
   };
 
-  const resetSurvey = () => {
-    setSurvey({ currentCategory: 'start', currentQuestion: 0, isCompleted: false });
-    setAnswers({});
-  };
-
   return (
     <SurveyContext.Provider
       value={{
         ...survey,
         selectQuestionAnswer,
         moveToNextCategory,
-        resetSurvey,
         answers,
       }}
     >

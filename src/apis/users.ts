@@ -1,4 +1,4 @@
-import { collection, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, updateDoc } from 'firebase/firestore';
 
 import { db } from '@/lib/firebase';
 
@@ -10,6 +10,7 @@ export interface User {
   link: string;
   hobbies: string[];
   updatedAt?: string;
+  isCompleted?: boolean;
 }
 
 export interface AuthResult {
@@ -98,51 +99,6 @@ export const getUser = async (userId: string) => {
   const userData = userSnapshot.data() as Omit<User, 'id'>;
   return { success: true, data: { id: userId, ...userData } };
 };
-
-// 3. 설문 답변 저장
-export async function saveSurveyAnswers(
-  userId: string,
-  answers: Record<string, number>
-): Promise<{ success: boolean; message: string }> {
-  try {
-    // 답변을 카테고리별로 분류
-    const categorizedAnswers = Object.entries(answers).reduce(
-      (acc, [questionNum, value]) => {
-        const num = parseInt(questionNum);
-        if (num <= 10) {
-          acc.personality.push(value);
-        } else if (num <= 20) {
-          acc.taste.push(value);
-        } else if (num <= 30) {
-          acc.values.push(value);
-        }
-        return acc;
-      },
-      { personality: [] as number[], taste: [] as number[], values: [] as number[] }
-    );
-
-    const surveyDoc = doc(db, 'survey', userId);
-    await updateDoc(surveyDoc, {
-      ...categorizedAnswers,
-      updatedAt: new Date().toISOString(),
-    }).catch(async (error) => {
-      if (error.code === 'not-found') {
-        // 문서가 없는 경우 새로 생성
-        await setDoc(surveyDoc, {
-          ...categorizedAnswers,
-          updatedAt: new Date().toISOString(),
-        });
-      } else {
-        throw error;
-      }
-    });
-
-    return { success: true, message: '설문 답변이 저장되었습니다.' };
-  } catch (error) {
-    console.error('Error saving survey answers:', error);
-    throw new Error('설문 답변 저장에 실패했습니다.');
-  }
-}
 
 // // 4. Top5/Worst5 가져오기
 // export async function getCompatibilityRanking(userId: string): Promise<RankingResult> {
