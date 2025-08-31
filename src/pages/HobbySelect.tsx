@@ -60,7 +60,11 @@ export const HobbySelect = () => {
     }
   };
 
-  if (user?.hobbies.length) return <Navigate to={PATH.SURVEY()} />;
+  if (user?.hobbies.length) {
+    if (user.isCompleted) return <Navigate to={PATH.SURVEY_COMPLETE()} />;
+    return <Navigate to={PATH.SURVEY()} />;
+  }
+
   const isMaxSelected = selectedHobbies.length >= MAX_SELECTIONS;
   return (
     <SurveyLayout>
