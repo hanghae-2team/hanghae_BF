@@ -79,9 +79,9 @@ export const categorizedAnswers = (answers: Record<string, number>) =>
       if (num <= 10) {
         acc.personality.push(value);
       } else if (num <= 20) {
-        acc.taste.push(value);
-      } else if (num <= 30) {
         acc.values.push(value);
+      } else if (num <= 30) {
+        acc.taste.push(value);
       }
       return acc;
     },
