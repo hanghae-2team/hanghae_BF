@@ -54,22 +54,34 @@ export const SurveyProvider = ({ children }: { children: React.ReactNode }) => {
         currentQuestion: 0,
       }));
     } else {
+      alert('설문 완료');
+    }
+  };
+
+  /**질문 답변 선택 */
+  const selectQuestionAnswer = (questionId: number, answer: number) => {
+    // 답변 저장
+    setAnswers((prev) => ({ ...prev, [questionId]: answer }));
+
+    // 마지막 질문(30번)인 경우 바로 설문 완료 처리
+    if (questionId === 30) {
       if (isPending) return; // 설문 결과 저장 중에 중복 저장 방지
+
+      // 현재 답변을 포함한 최종 answers 객체 생성
+      const finalAnswers = { ...answers, [questionId]: answer };
+
       saveSurveyResult(
-        { userId: user?.id ?? '', answers },
+        { userId: user?.id ?? '', answers: finalAnswers },
         {
           onSuccess: () => {
             navigate(PATH.SURVEY_COMPLETE());
           },
         }
       );
+    } else {
+      // 마지막 질문이 아닌 경우 다음 질문으로 이동
+      nextQuestion();
     }
-  };
-
-  /**질문 답변 선택 */
-  const selectQuestionAnswer = (questionId: number, answer: number) => {
-    setAnswers((prev) => ({ ...prev, [questionId]: answer }));
-    nextQuestion();
   };
 
   return (
