@@ -6,6 +6,8 @@ import type { MatchingUser } from '@/components/result/MatchingSection';
 import MatchingSection from '@/components/result/MatchingSection';
 import RollingPaperSection from '@/components/result/RollingPaperSection';
 import UserProfile from '@/components/result/UserProfile';
+import { Card } from '@/elements/card';
+import { Layout } from '@/elements/layout';
 
 // Mock Data (이후 API로 대체)
 const getBest5User = (): MatchingUser[] => [
@@ -104,15 +106,17 @@ export const ResultDetail = () => {
   if (!userData) return null;
 
   return (
-    <div className="space-y-4 p-8 min-h-dvh bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-      <UserProfile userData={userData} onClickRollingPaper={handleClickRollingPaper} />
+    <Layout>
+      <Card className="space-y-8 bg-white/90 m-4 p-8">
+        <UserProfile userData={userData} onClickRollingPaper={handleClickRollingPaper} />
 
-      <div className="flex flex-col gap-4 md:flex-row">
-        <MatchingSection title="찰떡 궁합" users={best5} />
-        <MatchingSection title="시루떡 궁합" users={worst5} />
-      </div>
+        <div className="flex flex-col gap-4 md:flex-row">
+          <MatchingSection title="찰떡 궁합" users={best5} />
+          <MatchingSection title="시루떡 궁합" users={worst5} />
+        </div>
 
-      <RollingPaperSection />
-    </div>
+        <RollingPaperSection />
+      </Card>
+    </Layout>
   );
 };
