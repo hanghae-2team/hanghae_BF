@@ -1,6 +1,7 @@
 import { PencilLine } from 'lucide-react';
 
 import type { User } from '@/apis/users';
+import { RollingPaperWriteDialog } from '@/components/result/RollingPaperWriteDialog';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Badge } from '@/elements/badge';
 import { Button } from '@/elements/button';
@@ -12,10 +13,9 @@ const mapHobbyIdsToNames = (id: string): string => {
 
 type Props = {
   userData: User;
-  onClickRollingPaper: () => void;
 };
 
-const UserProfile = ({ userData, onClickRollingPaper }: Props) => (
+const UserProfile = ({ userData }: Props) => (
   <section>
     <div className="flex gap-2 justify-center items-center">
       <Avatar className="size-12">
@@ -30,13 +30,14 @@ const UserProfile = ({ userData, onClickRollingPaper }: Props) => (
         </a>
       </div>
 
-      <Button
-        className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95"
-        onClick={onClickRollingPaper}
-      >
-        <PencilLine />
-        롤링페이퍼 쓰기
-      </Button>
+      <RollingPaperWriteDialog
+        renderTrigger={() => (
+          <Button className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95">
+            <PencilLine />
+            롤링페이퍼 쓰기
+          </Button>
+        )}
+      />
     </div>
 
     {userData.hobbies && (

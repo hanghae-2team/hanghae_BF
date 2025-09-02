@@ -99,16 +99,12 @@ export const ResultDetail = () => {
   const best5 = getBest5User();
   const worst5 = getWorst5User();
 
-  const handleClickRollingPaper = () => {
-    window.alert('롤링페이퍼 작성');
-  };
-
   if (!userData) return null;
 
   return (
     <Layout>
       <Card className="space-y-8 bg-white/90 m-4 p-8">
-        <UserProfile userData={userData} onClickRollingPaper={handleClickRollingPaper} />
+        <UserProfile userData={userData} />
 
         <div className="flex flex-col gap-4 md:flex-row">
           <MatchingSection title="찰떡 궁합" users={best5} />
