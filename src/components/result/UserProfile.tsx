@@ -37,6 +37,7 @@ const UserProfile = ({ userData }: Props) => (
             롤링페이퍼 쓰기
           </Button>
         )}
+        userData={userData}
       />
     </div>
 
