@@ -26,11 +26,11 @@ export const ResultHome = () => {
         <div className="mt-8 mb-4 lg:mb-6 flex items-center justify-center">
           <div className="relative inline-block">
             {/* 글로우 효과 */}
-            <div className="absolute inset-0 text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent blur-sm opacity-50">
+            <div className="font-PyeongchangPeace absolute inset-0 text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent blur-sm opacity-50">
               항해에서 BF찾기
             </div>
             {/* 메인 숫자 */}
-            <h1 className="relative text-5xl sm:text-6xl lg:text-7xl  font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+            <h1 className="font-PyeongchangPeace relative text-5xl sm:text-6xl lg:text-7xl  font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
               항해에서 BF찾기
             </h1>
           </div>
