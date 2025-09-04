@@ -16,7 +16,7 @@ type Props = {
 };
 
 const UserProfile = ({ userData }: Props) => (
-  <section>
+  <section className="mb-0">
     <div className="flex gap-2 justify-center items-center">
       <Avatar className="size-12">
         <AvatarImage src={userData.image} />

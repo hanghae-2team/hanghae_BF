@@ -2,12 +2,15 @@ import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router';
 
 import { getUser } from '@/apis/users';
+import kissingCatSrc from '@/assets/images/result/kissing_cat.svg';
+import wearyCatSrc from '@/assets/images/result/weary_cat.svg';
 import type { MatchingUser } from '@/components/result/MatchingSection';
 import MatchingSection from '@/components/result/MatchingSection';
 import RollingPaperSection from '@/components/result/RollingPaperSection';
 import UserProfile from '@/components/result/UserProfile';
 import { Card } from '@/elements/card';
 import { Layout } from '@/elements/layout';
+import { Separator } from '@/elements/separator';
 
 // Mock Data (이후 API로 대체)
 const getBest5User = (): MatchingUser[] => [
@@ -103,13 +106,27 @@ export const ResultDetail = () => {
 
   return (
     <Layout>
-      <Card className="space-y-8 bg-white/90 m-4 p-8">
+      <Card className="space-y-8 bg-white/90 p-8">
         <UserProfile userData={userData} />
 
-        <div className="flex flex-col gap-4 md:flex-row">
-          <MatchingSection title="찰떡 궁합" users={best5} />
-          <MatchingSection title="시루떡 궁합" users={worst5} />
-        </div>
+        <Card className="flex flex-col gap-4 p-8 lg:flex-row">
+          <div className="my-8 grow">
+            <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
+              <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
+              찰떡궁합
+            </h2>
+            <Separator />
+            <MatchingSection title="찰떡 궁합" users={best5} />
+          </div>
+          <div className="my-8 grow">
+            <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4  flex justify-center items-center">
+              <img src={wearyCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
+              시루떡 궁합
+            </h2>
+            <Separator />
+            <MatchingSection title="찰떡 궁합" users={worst5} />
+          </div>
+        </Card>
 
         <RollingPaperSection />
       </Card>
