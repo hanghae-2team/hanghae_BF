@@ -38,6 +38,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       } finally {
         setIsLoading(false);
       }
+    } else {
+      // savedUser가 없는 경우에도 로딩 완료 처리
+      setIsLoading(false);
     }
   }, []);
 
