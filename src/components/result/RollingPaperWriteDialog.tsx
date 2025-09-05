@@ -1,3 +1,4 @@
+import { useQueryClient } from '@tanstack/react-query';
 import { type ReactNode, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -30,8 +31,13 @@ export const RollingPaperWriteDialog = ({ renderTrigger, userData }: Props) => {
     setIsOpen(false);
   };
 
+  const queryClient = useQueryClient();
+
   const { mutate: addRollingPaper, isPending } = useAddRollingPaper({
     onSuccess: () => {
+      // 캐시 무효화
+      queryClient.invalidateQueries(['user', user?.id || '']);
+
       setTimeout(() => {
         handleClose();
         toast('롤링페이퍼 작성 완료', {

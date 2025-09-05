@@ -1,7 +1,9 @@
+import { useQuery } from '@tanstack/react-query';
 import { PencilLine } from 'lucide-react';
 
-import type { User } from '@/apis/users';
+import { getUser, type User } from '@/apis/users';
 import { RollingPaperWriteDialog } from '@/components/result/RollingPaperWriteDialog';
+import { useAuth } from '@/contexts/AuthContext';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Badge } from '@/elements/badge';
 import { Button } from '@/elements/button';
@@ -15,42 +17,56 @@ type Props = {
   userData: User;
 };
 
-const UserProfile = ({ userData }: Props) => (
-  <section className="mb-0">
-    <div className="flex gap-2 justify-center items-center">
-      <Avatar className="size-12">
-        <AvatarImage src={userData.image} />
-        <AvatarFallback>{userData.name}</AvatarFallback>
-      </Avatar>
+const UserProfile = ({ userData }: Props) => {
+  const { user: currentUser } = useAuth();
 
-      <div className="grow text-left">
-        <p className="font-bold">{userData.name}</p>
-        <a href={userData.link} target="_blank" rel="noopener noreferrer">
-          <p className="text-xs text-gray-700 hover:underline">@{userData.id}</p>
-        </a>
+  const { data: currentUserData } = useQuery({
+    queryKey: ['user', currentUser?.id || ''],
+    queryFn: () => getUser(currentUser?.id || ''),
+    select: (res) => res.data,
+    enabled: !!currentUser?.id,
+  });
+
+  const isAlreadyWrite = currentUserData?.writedRollingPapers?.some(
+    (rollingPaper) => rollingPaper.receiverId === userData.id
+  );
+  return (
+    <section className="mb-0">
+      <div className="flex gap-2 justify-center items-center">
+        <Avatar className="size-12">
+          <AvatarImage src={userData.image} />
+          <AvatarFallback>{userData.name}</AvatarFallback>
+        </Avatar>
+
+        <div className="grow text-left">
+          <p className="font-bold">{userData.name}</p>
+          <a href={userData.link} target="_blank" rel="noopener noreferrer">
+            <p className="text-xs text-gray-700 hover:underline">@{userData.id}</p>
+          </a>
+        </div>
+
+        <RollingPaperWriteDialog
+          renderTrigger={() => (
+            <Button className="text-white bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 text-xs sm:text-sm">
+              <PencilLine />
+              롤링페이퍼 {isAlreadyWrite ? '또' : ''} 쓰기
+            </Button>
+          )}
+          userData={userData}
+        />
       </div>
 
-      <RollingPaperWriteDialog
-        renderTrigger={() => (
-          <Button className="text-white bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 text-xs sm:text-sm">
-            <PencilLine />
-            롤링페이퍼 쓰기
-          </Button>
-        )}
-        userData={userData}
-      />
-    </div>
-
-    {userData.hobbies && (
-      <div className="mt-2 text-left">
-        {userData.hobbies.map((hobby: string) => (
-          <Badge key={`${userData.id}-${hobby}`} className="bg-gray-700 mr-2">
-            {mapHobbyIdsToNames(hobby)}
-          </Badge>
-        ))}
-      </div>
-    )}
-  </section>
-);
+      {userData.hobbies && (
+        <div className="mt-2 text-left">
+          {userData.hobbies.map((hobby: string) => (
+            <Badge key={`${userData.id}-${hobby}`} className="bg-gray-700 mr-2">
+              {mapHobbyIdsToNames(hobby)}
+            </Badge>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+};
 
 export default UserProfile;
