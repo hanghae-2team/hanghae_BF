@@ -7,9 +7,9 @@ import matchResultData from '../assets/result/match-result.json';
 
 interface MatchResult {
   targetId: string;
-  taste: number;
-  values: number;
-  personality: number;
+  taste: number; //입밋
+  values: number; // 가치관
+  personality: number; // 성향
   total: number;
 }
 
@@ -35,8 +35,14 @@ const Test = () => {
       const results: UserTopMatches[] = [];
 
       Object.entries(matchResultData).forEach(([userId, matches]) => {
-        // total 기준으로 내림차순 정렬 후 상위 5명 선택
-        const topMatches = (matches as MatchResult[]).sort((a, b) => b.total - a.total).slice(0, 5);
+        // 보정된 점수 기준으로 내림차순 정렬 후 상위 5명 선택
+        const topMatches = (matches as MatchResult[])
+          .map((match) => ({
+            ...match,
+            adjustedScore: match.personality * 5 + match.values * 2 + match.taste,
+          }))
+          .sort((a, b) => b.adjustedScore - a.adjustedScore)
+          .slice(0, 5);
 
         results.push({
           userId,
@@ -98,6 +104,10 @@ const Test = () => {
                       <div className="text-right">
                         <div className="text-2xl font-bold text-blue-600">{match.total}</div>
                         <div className="text-xs text-gray-500">총점</div>
+                        <div className="text-lg font-semibold text-red-600">
+                          {match.personality * 5 + match.values * 2 + match.taste}
+                        </div>
+                        <div className="text-xs text-gray-500">보정점수</div>
                       </div>
                     </div>
 
