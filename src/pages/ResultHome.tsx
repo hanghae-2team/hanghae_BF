@@ -7,7 +7,7 @@ import cloverSvg from '@/assets/images/result/clover.svg';
 import { TeamSection } from '@/components/result/TeamSection';
 import { useAuth } from '@/contexts/AuthContext';
 import { Layout } from '@/elements/layout';
-import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/UserUtils';
+import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/userUtils';
 
 export const ResultHome = () => {
   const { user: currentUser } = useAuth();
