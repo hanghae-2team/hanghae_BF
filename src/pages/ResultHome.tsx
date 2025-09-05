@@ -4,10 +4,10 @@ import { Link } from 'react-router';
 
 import { getAllUsers } from '@/apis/users';
 import cloverSvg from '@/assets/images/result/clover.svg';
+import { TeamSection } from '@/components/result/TeamSection';
 import { useAuth } from '@/contexts/AuthContext';
-import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Layout } from '@/elements/layout';
-import { convertRawDataToUsers } from '@/utils/UserUtils';
+import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/UserUtils';
 
 export const ResultHome = () => {
   const { user: currentUser } = useAuth();
@@ -19,6 +19,7 @@ export const ResultHome = () => {
   });
 
   const users = data ? convertRawDataToUsers(data) : [];
+  const teamGroups = getSortedTeamGroups(users);
 
   return (
     <Layout>
@@ -53,22 +54,9 @@ export const ResultHome = () => {
           </Link>
         </div>
 
-        <div className="mx-auto grid grid-cols-2 md:grid-cols-3 px-8 lg:px-0 lg:grid-cols-4 gap-y-4 gap-x-4">
-          {Object.values(users).map((user) => (
-            <Link to={user.id} key={user.id}>
-              <div className="group w-full flex justify-start items-center gap-4  p-2 overflow-hidden rounded-lg border bg-white/80 shadow-sm shadow-zinc-200 animate-fade-up transition-transform duration-150 ease-out hover:scale-105 ">
-                <Avatar className="size-12 sm:size-20 rounded-md">
-                  <AvatarImage src={user.image} />
-                  <AvatarFallback>{user.name}</AvatarFallback>
-                </Avatar>
-                <div className="min-w-0">
-                  <div className="text-left md:text-base font-bold transition-colors group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 group-hover:bg-clip-text ">
-                    {user.name}
-                  </div>
-                  <div className="text-xs md:text-sm text-gray-500 truncate">@{user.id}</div>
-                </div>
-              </div>
-            </Link>
+        <div className="px-8 lg:px-0">
+          {teamGroups.map(({ teamName, users: teamUsers }) => (
+            <TeamSection key={teamName} teamName={teamName} users={teamUsers} />
           ))}
         </div>
       </div>
