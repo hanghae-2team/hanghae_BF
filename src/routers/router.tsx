@@ -13,6 +13,7 @@ import { Splash } from '@/pages/Splash';
 // import { Survey } from '@/pages/Survey';
 // import { SurveyComplete } from '@/pages/SurveyComplete';
 import Test from '@/pages/Test';
+import TestOrigin from '@/pages/TestOrigin';
 
 export const PATH = {
   SPLASH: () => '/',
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: PATH.LOGIN(),
     element: <Login />,
+  },
+  {
+    path: '/test-origin',
+    element: <TestOrigin />,
   },
   {
     path: '/test',
