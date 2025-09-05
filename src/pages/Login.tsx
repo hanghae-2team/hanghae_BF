@@ -42,7 +42,7 @@ export const Login = () => {
     },
     onSuccess: (res) => {
       login(res.user);
-      navigate(PATH.HOBBY_SELECT());
+      navigate(PATH.RESULT_HOME());
     },
     onError: () => {
       setErrors({ general: '로그인에 실패했습니다. 다시 시도해주세요.' });

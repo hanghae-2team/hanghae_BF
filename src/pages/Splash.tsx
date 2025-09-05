@@ -29,7 +29,7 @@ export const Splash = () => {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  if (user) return <Navigate to={PATH.HOBBY_SELECT()} />;
+  if (user) return <Navigate to={PATH.RESULT_HOME()} />;
 
   const HeartIcon = () => (
     <div className="relative">
