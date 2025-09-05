@@ -13,7 +13,7 @@ type Props = {
 const MatchListItem = ({ matchResult, rank }: Props) => (
   <li className="flex flex-col xs:flex-row  p-2 sm:p-4">
     <div className="w-full flex items-center gap-2 text-left">
-      <p className="rounded-full font-bold">{rank}</p>
+      <p className="rounded-full font-bold w-6 text-center">{rank}</p>
       <Avatar>
         <AvatarImage src={matchResult.image} />
         <AvatarFallback>{matchResult.name}</AvatarFallback>

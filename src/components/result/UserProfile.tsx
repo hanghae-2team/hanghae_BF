@@ -32,7 +32,7 @@ const UserProfile = ({ userData }: Props) => (
 
       <RollingPaperWriteDialog
         renderTrigger={() => (
-          <Button className="text-white text-sm bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 ">
+          <Button className="text-white bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 text-xs sm:text-sm">
             <PencilLine />
             롤링페이퍼 쓰기
           </Button>
