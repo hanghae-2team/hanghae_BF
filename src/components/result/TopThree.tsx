@@ -8,7 +8,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/elements/tooltip';
 import { cn } from '@/lib/utils';
 
 interface Props {
-  users: User[];
+  users: Omit<User, 'team'>[];
 }
 
 const rankingStyle: Record<number, { order: string; gradientColor: string; baseColor: string }> = {

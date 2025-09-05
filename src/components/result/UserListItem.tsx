@@ -5,7 +5,7 @@ import type { MatchingUser } from '@/components/result/MatchingSection';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/elements/tooltip';
 
-const UserListItem = ({ user, rank }: { user: MatchingUser; rank: number }) => (
+const UserListItem = ({ user, rank }: { user: Omit<MatchingUser, 'team'>; rank: number }) => (
   <li className="flex items-center gap-2 text-left bg-white p-4 rounded-lg">
     <p className="rounded-full font-bold">{rank}</p>
     <Avatar>
