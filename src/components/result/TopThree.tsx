@@ -1,14 +1,14 @@
 import { MousePointerClick } from 'lucide-react';
 import { Link } from 'react-router';
 
-import type { User } from '@/apis/users';
 import { MatchingDialog } from '@/components/MatchingDialog';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/elements/tooltip';
 import { cn } from '@/lib/utils';
+import type { MatchResultWithUser } from '@/types/result';
 
 interface Props {
-  users: Omit<User, 'team'>[];
+  matchResults: MatchResultWithUser[];
 }
 
 const rankingStyle: Record<number, { order: string; gradientColor: string; baseColor: string }> = {
@@ -25,23 +25,23 @@ const rankingStyle: Record<number, { order: string; gradientColor: string; baseC
   2: { order: 'order-3', gradientColor: 'from-blue-50/20 via-slate-100/30 to-rose-200', baseColor: 'bg-rose-200' },
 };
 
-export default function TopThree({ users }: Props) {
+export default function TopThree({ matchResults }: Props) {
   return (
     <div className="flex justify-center items-end gap-4 p-8 m-4">
-      {users.map((user, index) => (
+      {matchResults.map((user, index) => (
         <MatchingDialog
           key={`topthree-${user.name}`}
           renderTrigger={() => (
-            <div key={user.name} className={`flex w-24 flex-col items-center ${rankingStyle[index].order}`}>
+            <div key={user.name} className={`flex w-18 sm:w-24 flex-col items-center ${rankingStyle[index].order}`}>
               {/* 아바타 */}
               <div className="relative">
                 <div
                   className={cn(
-                    'absolute size-18 rounded-full bg-gradient-to-br shadow-md shadow-slate-300',
+                    'absolute size-14 sm:size-18 rounded-full bg-gradient-to-br shadow-md shadow-slate-300',
                     rankingStyle[index].gradientColor
                   )}
                 ></div>
-                <Avatar className={'relative w-16 h-16 m-1'}>
+                <Avatar className={'relative size-12 sm:size-16 m-1'}>
                   <AvatarImage src={user.image} />
                   <AvatarFallback>{user.name}</AvatarFallback>
                 </Avatar>

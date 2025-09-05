@@ -1,36 +1,27 @@
-import type { User } from '@/apis/users';
-import { MatchingDialog } from '@/components/MatchingDialog';
 import TopThree from '@/components/result/TopThree';
-import UserListItem from '@/components/result/UserListItem';
+import MatchListItem from '@/components/result/UserListItem';
 import { Separator } from '@/elements/separator';
-
-export type MatchingUser = Omit<User, 'updatedAt'>;
+import type { MatchResultWithUser } from '@/types/result';
 
 type Props = {
-  title: string;
-  users: Omit<MatchingUser, 'team'>[];
+  matchResults: MatchResultWithUser[];
   startRank?: number;
 };
 
-const MatchingSection = ({ title, users }: Props) => (
-  <>
-    <Separator />
+const MatchingSection = ({ matchResults }: Props) => {
+  return (
+    <>
+      <Separator />
 
-    <TopThree users={users.slice(0, 3)} />
+      <TopThree matchResults={matchResults.slice(0, 3)} />
 
-    <ul className="space-y-2 mt-2">
-      {users.slice(3, 5).map((user, index) => (
-        <MatchingDialog
-          key={`${title}-${user.id}-trigger`}
-          renderTrigger={() => (
-            <div className="w-full cursor-pointer">
-              <UserListItem user={user} rank={index + 4} />
-            </div>
-          )}
-        />
-      ))}
-    </ul>
-  </>
-);
+      <ul className="space-y-2 mt-2">
+        {matchResults.slice(3).map((user, index) => (
+          <MatchListItem matchResult={user} rank={index + 4} key={`${user.targetId}-trigger`} />
+        ))}
+      </ul>
+    </>
+  );
+};
 
 export default MatchingSection;

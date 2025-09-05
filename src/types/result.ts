@@ -6,16 +6,13 @@ export interface MatchResult {
   values: number;
   personality: number;
   total: number;
-  commonChoices: {
-    taste: { question: string; choiceContent: string }[];
-    values: { question: string; choiceContent: string }[];
-    personality: { question: string; choiceContent: string }[];
-  };
+  adjustScore: number;
 }
 
+export type MatchResultWithUser = MatchResult & Omit<User, 'hobbies' | 'team'>;
+
 export interface SurveyResultJson {
-  top5: MatchResult[];
-  bottom5: MatchResult[];
+  top10: MatchResult[];
 }
 
 export type FinalResultJson = Record<string, SurveyResultJson>;

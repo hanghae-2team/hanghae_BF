@@ -3,7 +3,6 @@ import { useParams } from 'react-router';
 
 import { getUser } from '@/apis/users';
 import kissingCatSrc from '@/assets/images/result/kissing_cat.svg';
-import wearyCatSrc from '@/assets/images/result/weary_cat.svg';
 import finalResult from '@/assets/result/final-result.json';
 import MatchingSection from '@/components/result/MatchingSection';
 import ResultDetailBreadCrumb from '@/components/result/ResultDetailBreadCrumb';
@@ -32,23 +31,12 @@ export const ResultDetail = () => {
     return <NotFound />;
   }
 
-  const best5 = surveyResult.top5.map((result) => {
+  const top10 = surveyResult.top10.map((result) => {
     const userInfo = (users as UsersType)[result.targetId];
     return {
       ...result,
       ...userInfo,
       id: result.targetId,
-      hobbies: [],
-    };
-  });
-
-  const worst5 = surveyResult.bottom5.map((result) => {
-    const userInfo = (users as UsersType)[result.targetId];
-    return {
-      ...result,
-      ...userInfo,
-      id: result.targetId,
-      hobbies: [],
     };
   });
 
@@ -70,15 +58,7 @@ export const ResultDetail = () => {
                   찰떡궁합
                 </h2>
                 <Separator />
-                <MatchingSection title="찰떡 궁합" users={best5} />
-              </div>
-              <div className="my-8 grow">
-                <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4  flex justify-center items-center">
-                  <img src={wearyCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
-                  시루떡 궁합
-                </h2>
-                <Separator />
-                <MatchingSection title="시루떡 궁합" users={worst5} />
+                <MatchingSection matchResults={top10} />
               </div>
             </Card>
             <RollingPaperSection />
