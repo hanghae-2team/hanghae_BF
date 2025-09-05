@@ -47,7 +47,7 @@ export const ResultDetail = () => {
   return (
     <Layout>
       <ResultDetailBreadCrumb userName={userData?.name} className={'m-4 mb-3 md:m-8 md:mb-3'} />
-      <Card className="min-h-dvh space-y-8 bg-white/90 p-6 md:p-8 m-4 mt-3 md:m-8 md:mt-3">
+      <Card className="min-h-dvh space-y-8 bg-white/90 p-3 md:p-8 m-2 mt-3 md:m-8 md:mt-3">
         {userData && (
           <>
             <UserProfile userData={userData} />

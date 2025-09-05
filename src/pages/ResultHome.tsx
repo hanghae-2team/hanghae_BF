@@ -27,24 +27,24 @@ export const ResultHome = () => {
         <div className="mt-8 mb-4 lg:mb-6 flex items-center justify-center">
           <div className="relative inline-block">
             {/* 글로우 효과 */}
-            <div className="font-PyeongchangPeace absolute inset-0 text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent blur-sm opacity-50">
+            <div className="font-PyeongchangPeace absolute inset-0 text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent blur-sm opacity-50">
               항해에서 BF찾기
             </div>
             {/* 메인 숫자 */}
-            <h1 className="font-PyeongchangPeace relative text-5xl sm:text-6xl lg:text-7xl  font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+            <h1 className="font-PyeongchangPeace relative text-4xl xs:test-5xl sm:text-4xl lg:text-7xl  font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
               항해에서 BF찾기
             </h1>
           </div>
         </div>
 
-        <div className="text-center text-base md:text-md text-purple-100/80  whitespace-pre-line ">
+        <div className="text-center text-sm xs:text-base md:text-md text-purple-100/80  whitespace-pre-line ">
           <img src={cloverSvg} alt="clover emoji" width="24" height="24" className="inline" />
           결과 공개까지 기다려주셔서 정말 감사합니다!
           <img src={cloverSvg} alt="clover emoji" width="24" height="24" className="inline" />
           {'\n'} 항해인 중 나랑 찰떡궁합인 사람들은 과연 누구일까요?
         </div>
 
-        <div className="flex justify-end mt-4 mb-8 md:my-8 px-8 lg:px-0">
+        <div className="flex justify-end mt-4 mb-8 md:my-8 px-4 lg:px-0">
           <Link
             to={`/result/${currentUser?.id}`}
             className="bg-black rounded-full w-fit px-2 py-1 flex items-center text-sm sm:text-base md:text-base  text-white/75"
@@ -54,7 +54,7 @@ export const ResultHome = () => {
           </Link>
         </div>
 
-        <div className="px-8 lg:px-0">
+        <div className="px-4 lg:px-0">
           {teamGroups.map(({ teamName, users: teamUsers }) => (
             <TeamSection key={teamName} teamName={teamName} users={teamUsers} />
           ))}
