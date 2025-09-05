@@ -30,6 +30,7 @@ export default function TopThree({ matchResults }: Props) {
     <div className="flex justify-center items-end gap-4 p-8 m-4">
       {matchResults.map((user, index) => (
         <MatchingDialog
+          user={user}
           key={`topthree-${user.name}`}
           renderTrigger={() => (
             <div key={user.name} className={`flex w-18 sm:w-24 flex-col items-center ${rankingStyle[index].order}`}>

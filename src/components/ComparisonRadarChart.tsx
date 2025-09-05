@@ -1,63 +1,58 @@
 import {
   Chart as ChartJS,
+  type ChartData,
   Filler,
   Legend,
   LineElement,
   PointElement,
   RadialLinearScale,
   Tooltip,
-  type ChartData,
 } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 
+import type { ChartWithUserData } from '@/utils/chartUtils';
+
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
-interface UserData {
-  name: string;
-  taste: number; // 입맛 (0-100)
-  values: number; // 가치관 (0-100)
-  personality: number; // 성향 (0-100)
-}
-
 interface ComparisonRadarChartProps {
-  user1Data: UserData;
-  user2Data: UserData;
+  currentUserChartData: ChartWithUserData;
+  targetUserChartData: ChartWithUserData;
 }
 
-const user1Color = 'rgb(255, 159, 177)'; // 코랄 핑크
-const user1ColorTransparent = 'rgba(255, 159, 177, 0.3)'; // 반투명 코랄 핑크
-const user2Color = 'rgb(144, 202, 249)'; // 스카이 블루
-const user2ColorTransparent = 'rgba(144, 202, 249, 0.3)'; // 반투명 스카이 블루
+const currentUserColor = 'rgb(255, 159, 177)'; // 코랄 핑크
+const currentUserColorTransparent = 'rgba(255, 159, 177, 0.3)'; // 반투명 코랄 핑크
+const targetUserColor = 'rgb(144, 202, 249)'; // 스카이 블루
+const targetUserColorTransparent = 'rgba(144, 202, 249, 0.3)'; // 반투명 스카이 블루
 const hoverColor = '#fff'; // 호버 시 흰색
 
-export const ComparisonRadarChart = ({ user1Data, user2Data }: ComparisonRadarChartProps) => {
+export const ComparisonRadarChart = ({ currentUserChartData, targetUserChartData }: ComparisonRadarChartProps) => {
   const data: ChartData<'radar'> = {
     labels: ['입맛', '가치관', '성향'],
     datasets: [
       {
-        label: user1Data.name,
-        data: [user1Data.taste, user1Data.values, user1Data.personality],
-        borderColor: user1Color,
-        backgroundColor: user1ColorTransparent,
+        label: currentUserChartData.name,
+        data: [currentUserChartData.taste, currentUserChartData.values, currentUserChartData.personality],
+        borderColor: currentUserColor,
+        backgroundColor: currentUserColorTransparent,
         borderWidth: 3,
-        pointBackgroundColor: user1Color,
-        pointBorderColor: user1Color,
+        pointBackgroundColor: currentUserColor,
+        pointBorderColor: currentUserColor,
         pointHoverBackgroundColor: hoverColor,
-        pointHoverBorderColor: user1Color,
+        pointHoverBorderColor: currentUserColor,
         pointRadius: 6,
         pointHoverRadius: 8,
         fill: true,
       },
       {
-        label: user2Data.name,
-        data: [user2Data.taste, user2Data.values, user2Data.personality],
-        borderColor: user2Color,
-        backgroundColor: user2ColorTransparent,
+        label: targetUserChartData.name,
+        data: [targetUserChartData.taste, targetUserChartData.values, targetUserChartData.personality],
+        borderColor: targetUserColor,
+        backgroundColor: targetUserColorTransparent,
         borderWidth: 3,
-        pointBackgroundColor: user2Color,
-        pointBorderColor: user2Color,
+        pointBackgroundColor: targetUserColor,
+        pointBorderColor: targetUserColor,
         pointHoverBackgroundColor: hoverColor,
-        pointHoverBorderColor: user2Color,
+        pointHoverBorderColor: targetUserColor,
         pointRadius: 6,
         pointHoverRadius: 8,
         fill: true,
@@ -95,10 +90,10 @@ export const ComparisonRadarChart = ({ user1Data, user2Data }: ComparisonRadarCh
           scales: {
             r: {
               angleLines: {
-                color: user1Color,
+                color: currentUserColor,
               },
               grid: {
-                color: user1Color,
+                color: currentUserColor,
               },
               pointLabels: {
                 display: false,
