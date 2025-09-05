@@ -105,7 +105,7 @@ const Test = () => {
                         <div className="text-2xl font-bold text-blue-600">{match.total}</div>
                         <div className="text-xs text-gray-500">총점</div>
                         <div className="text-lg font-semibold text-red-600">
-                          {match.personality * 5 + match.values * 2 + match.taste}
+                          {match.personality * 4 + match.values * 4 + match.taste * 2}
                         </div>
                         <div className="text-xs text-gray-500">보정점수</div>
                       </div>
