@@ -39,7 +39,7 @@ const Test = () => {
         const topMatches = (matches as MatchResult[])
           .map((match) => ({
             ...match,
-            adjustedScore: match.personality * 5 + match.values * 2 + match.taste,
+            adjustedScore: match.personality * 4 + match.values * 4 + match.taste,
           }))
           .sort((a, b) => b.adjustedScore - a.adjustedScore)
           .slice(0, 5);
