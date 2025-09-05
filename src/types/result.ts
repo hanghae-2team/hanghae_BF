@@ -20,4 +20,4 @@ export interface SurveyResultJson {
 
 export type FinalResultJson = Record<string, SurveyResultJson>;
 
-export type UsersType = Record<string, Omit<User, 'hobbies'>>;
+export type UsersType = Record<string, Omit<User, 'hobbies' | 'team'>>;

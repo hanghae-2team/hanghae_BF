@@ -6,6 +6,7 @@ import kissingCatSrc from '@/assets/images/result/kissing_cat.svg';
 import wearyCatSrc from '@/assets/images/result/weary_cat.svg';
 import finalResult from '@/assets/result/final-result.json';
 import MatchingSection from '@/components/result/MatchingSection';
+import ResultDetailBreadCrumb from '@/components/result/ResultDetailBreadCrumb';
 import RollingPaperSection from '@/components/result/RollingPaperSection';
 import UserProfile from '@/components/result/UserProfile';
 import users from '@/data/users.json';
@@ -57,7 +58,8 @@ export const ResultDetail = () => {
 
   return (
     <Layout>
-      <Card className="min-h-dvh space-y-8 bg-white/90 p-8 m-4 md:m-8">
+      <ResultDetailBreadCrumb userName={userData?.name} className={'m-4 mb-3 md:m-8 md:mb-3'} />
+      <Card className="min-h-dvh space-y-8 bg-white/90 p-8 m-4 mt-3 md:m-8 md:mt-3">
         {userData && (
           <>
             <UserProfile userData={userData} />
