@@ -59,11 +59,11 @@ export const ResultDetail = () => {
   return (
     <Layout>
       <ResultDetailBreadCrumb userName={userData?.name} className={'m-4 mb-3 md:m-8 md:mb-3'} />
-      <Card className="min-h-dvh space-y-8 bg-white/90 p-8 m-4 mt-3 md:m-8 md:mt-3">
+      <Card className="min-h-dvh space-y-8 bg-white/90 p-6 md:p-8 m-4 mt-3 md:m-8 md:mt-3">
         {userData && (
           <>
             <UserProfile userData={userData} />
-            <Card className="flex flex-col gap-4 p-8 lg:flex-row">
+            <Card className="flex flex-col gap-4 p-4 md:p-8 lg:flex-row">
               <div className="my-8 grow">
                 <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
                   <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />

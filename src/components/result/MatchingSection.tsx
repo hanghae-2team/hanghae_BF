@@ -24,7 +24,7 @@ const MatchingSection = ({ title, users }: Props) => (
           key={`${title}-${user.id}-trigger`}
           renderTrigger={() => (
             <div className="w-full cursor-pointer">
-              <UserListItem user={user} rank={index + 3} />
+              <UserListItem user={user} rank={index + 4} />
             </div>
           )}
         />
