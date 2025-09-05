@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import type { User } from '@/apis/users';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { cn } from '@/lib/utils';
-import { isSurveyComplete, notTakenSurveyUsersStyle } from '@/utils/userUtils';
+import { isSurveyComplete, notTakenSurveyUsersStyle } from '@/utils/UserUtils';
 
 interface TeamSectionProps {
   teamName: string;

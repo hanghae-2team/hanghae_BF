@@ -41,14 +41,14 @@ export const SurveyValues = () => {
         <div className="mb-8 lg:mb-0">
           <ProgressBar currentQuestion={currentQuestion} progress={progress} surveyType="values" />
         </div>
-        <div className="text-center pb-6 pt-4 md:pt-8 sm:pt-10 md:pt-12 lg:pt-10">
+        <div className="text-center pb-6 pt-4 md:pt-8 sm:pt-10 lg:pt-10">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl leading-relaxed text-gray-800 px-4 font-semibold">
             어떤 사람이 더 싫으신가요?
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-2 md:gap-3 sm:gap-4 md:gap-5 lg:gap-4">
+        <div className="grid grid-cols-1 gap-2 sm:gap-4 md:gap-5 lg:gap-4">
           {/* 택1 답변 옵션 */}
-          <div className="grid grid-cols-1 gap-2 md:gap-3 sm:gap-4 md:gap-5 lg:gap-4">
+          <div className="grid grid-cols-1 gap-2 sm:gap-4 md:gap-5 lg:gap-4">
             {currentQuestionData.choices.map((option, index) => (
               <div
                 key={option}

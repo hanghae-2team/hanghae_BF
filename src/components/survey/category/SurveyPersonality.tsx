@@ -53,7 +53,7 @@ export const SurveyPersonality = () => {
           {SURVEY_PERSONALITY_OPTIONS.map((option) => (
             <div
               key={option.label}
-              className="group cursor-pointer transition-all duration-500 border-2 border-pink-100 hover:border-pink-300 p-[14px] md:p-4 sm:p-5 md:p-6 lg:p-5 rounded-2xl shadow-sm hover:shadow-xl bg-gradient-to-r from-white to-pink-50/50 hover:from-pink-50 hover:to-pink-100 relative overflow-hidden"
+              className="group cursor-pointer transition-all duration-500 border-2 border-pink-100 hover:border-pink-300 p-[14px] md:p-4 sm:p-5 lg:p-5 rounded-2xl shadow-sm hover:shadow-xl bg-gradient-to-r from-white to-pink-50/50 hover:from-pink-50 hover:to-pink-100 relative overflow-hidden"
               onClick={() => handleAnswerSelect(option.value)}
             >
               {/* 호버 시 배경 애니메이션 */}
