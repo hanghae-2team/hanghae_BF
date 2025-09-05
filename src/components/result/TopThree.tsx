@@ -30,7 +30,7 @@ export default function TopThree({ users }: Props) {
     <div className="flex justify-center items-end gap-4 p-8 m-4">
       {users.map((user, index) => (
         <MatchingDialog
-          key={user.name}
+          key={`topthree-${user.name}`}
           renderTrigger={() => (
             <div key={user.name} className={`flex w-24 flex-col items-center ${rankingStyle[index].order}`}>
               {/* 아바타 */}
@@ -43,7 +43,7 @@ export default function TopThree({ users }: Props) {
                 ></div>
                 <Avatar className={'relative w-16 h-16 m-1'}>
                   <AvatarImage src={user.image} />
-                  <AvatarFallback>{user.name[0]}</AvatarFallback>
+                  <AvatarFallback>{user.name}</AvatarFallback>
                 </Avatar>
               </div>
               {/* 순위 배지 */}

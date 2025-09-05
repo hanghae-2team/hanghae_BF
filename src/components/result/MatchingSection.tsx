@@ -8,7 +8,7 @@ export type MatchingUser = Omit<User, 'updatedAt'>;
 
 type Props = {
   title: string;
-  users: MatchingUser[];
+  users: Omit<MatchingUser, 'team'>[];
   startRank?: number;
 };
 
@@ -23,9 +23,9 @@ const MatchingSection = ({ title, users }: Props) => (
         <MatchingDialog
           key={`${title}-${user.id}-trigger`}
           renderTrigger={() => (
-            <button className="w-full">
+            <div className="w-full cursor-pointer">
               <UserListItem user={user} rank={index + 3} />
-            </button>
+            </div>
           )}
         />
       ))}
