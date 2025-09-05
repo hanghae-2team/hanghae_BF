@@ -1,15 +1,17 @@
 import { useQuery } from '@tanstack/react-query';
 import { ChevronRight } from 'lucide-react';
-import { Link } from 'react-router';
+import { useNavigate } from 'react-router';
 
 import { getAllUsers } from '@/apis/users';
 import cloverSvg from '@/assets/images/result/clover.svg';
 import { TeamSection } from '@/components/result/TeamSection';
 import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/elements/button';
 import { Layout } from '@/elements/layout';
 import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/userUtils';
 
 export const ResultHome = () => {
+  const navigate = useNavigate();
   const { user: currentUser } = useAuth();
   const { data } = useQuery({
     queryKey: ['users'],
@@ -44,14 +46,14 @@ export const ResultHome = () => {
           {'\n'} 항해인 중 나랑 찰떡궁합인 사람들은 과연 누구일까요?
         </div>
 
-        <div className="flex justify-end mt-4 mb-8 md:my-8 px-4 lg:px-0">
-          <Link
-            to={`/result/${currentUser?.id}`}
-            className="bg-black rounded-full w-fit px-2 py-1 flex items-center text-sm sm:text-base md:text-base  text-white/75"
+        <div className="flex justify-end mt-4 mb-8 md:my-8 px-8 lg:px-0">
+          <Button
+            onClick={() => navigate(`/result/${currentUser?.id}`)}
+            className="text-white bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 text-xs sm:text-sm"
           >
             내 항해 궁합 보러가기
             <ChevronRight size={16} />
-          </Link>
+          </Button>
         </div>
 
         <div className="px-4 lg:px-0">
