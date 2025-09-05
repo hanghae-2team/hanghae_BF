@@ -11,6 +11,7 @@ import UserProfile from '@/components/result/UserProfile';
 import { Card } from '@/elements/card';
 import { Layout } from '@/elements/layout';
 import { Separator } from '@/elements/separator';
+import { NotFound } from '@/pages/NotFound';
 
 // Mock Data (이후 API로 대체)
 const getBest5User = (): MatchingUser[] => [
@@ -92,7 +93,7 @@ const getWorst5User = (): MatchingUser[] => [
 export const ResultDetail = () => {
   const { id } = useParams();
 
-  const { data: userData } = useQuery({
+  const { data: userData, isError } = useQuery({
     queryKey: ['user', id],
     queryFn: () => getUser(id!),
     select: (res) => res.data,
@@ -102,33 +103,37 @@ export const ResultDetail = () => {
   const best5 = getBest5User();
   const worst5 = getWorst5User();
 
-  if (!userData) return null;
+  if (isError) {
+    return <NotFound />;
+  }
 
   return (
     <Layout>
-      <Card className="space-y-8 bg-white/90 p-8">
-        <UserProfile userData={userData} />
-
-        <Card className="flex flex-col gap-4 p-8 lg:flex-row">
-          <div className="my-8 grow">
-            <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
-              <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
-              찰떡궁합
-            </h2>
-            <Separator />
-            <MatchingSection title="찰떡 궁합" users={best5} />
-          </div>
-          <div className="my-8 grow">
-            <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4  flex justify-center items-center">
-              <img src={wearyCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
-              시루떡 궁합
-            </h2>
-            <Separator />
-            <MatchingSection title="찰떡 궁합" users={worst5} />
-          </div>
-        </Card>
-
-        <RollingPaperSection />
+      <Card className="min-h-dvh space-y-8 bg-white/90 p-8 m-4 md:m-8">
+        {userData && (
+          <>
+            <UserProfile userData={userData} />
+            <Card className="flex flex-col gap-4 p-8 lg:flex-row">
+              <div className="my-8 grow">
+                <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
+                  <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
+                  찰떡궁합
+                </h2>
+                <Separator />
+                <MatchingSection title="찰떡 궁합" users={best5} />
+              </div>
+              <div className="my-8 grow">
+                <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4  flex justify-center items-center">
+                  <img src={wearyCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
+                  시루떡 궁합
+                </h2>
+                <Separator />
+                <MatchingSection title="찰떡 궁합" users={worst5} />
+              </div>
+            </Card>
+            <RollingPaperSection />
+          </>
+        )}
       </Card>
     </Layout>
   );

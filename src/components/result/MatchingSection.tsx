@@ -18,7 +18,7 @@ const MatchingSection = ({ title, users }: Props) => (
 
     <TopThree users={users.slice(0, 3)} />
 
-    <ul className="space-y-4 mt-4">
+    <ul className="space-y-2 mt-2">
       {users.slice(3, 5).map((user, index) => (
         <MatchingDialog
           key={`${title}-${user.id}-trigger`}

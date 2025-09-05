@@ -15,7 +15,7 @@ export const ResultHome = () => {
     queryKey: ['users'],
     queryFn: getAllUsers,
     placeholderData: {},
-    staleTime: 5 * 60 * 1000, // 분
+    staleTime: 60 * 60 * 1000, // 분
   });
 
   const users = data ? convertRawDataToUsers(data) : [];
@@ -56,7 +56,7 @@ export const ResultHome = () => {
         <div className="mx-auto grid grid-cols-2 md:grid-cols-3 px-8 lg:px-0 lg:grid-cols-4 gap-y-4 gap-x-4">
           {Object.values(users).map((user) => (
             <Link to={user.id} key={user.id}>
-              <div className="group w-full flex justify-start items-center gap-4  p-2 overflow-hidden rounded-lg border bg-white/80 shadow-sm shadow-zinc-200 animate-fade-up transition-transform duration-300 ease-out hover:scale-105 ">
+              <div className="group w-full flex justify-start items-center gap-4  p-2 overflow-hidden rounded-lg border bg-white/80 shadow-sm shadow-zinc-200 animate-fade-up transition-transform duration-150 ease-out hover:scale-105 ">
                 <Avatar className="size-12 sm:size-20 rounded-md">
                   <AvatarImage src={user.image} />
                   <AvatarFallback>{user.name}</AvatarFallback>
