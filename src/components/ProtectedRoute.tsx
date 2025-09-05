@@ -7,7 +7,11 @@ interface ProtectedRouteProps {
 }
 
 export const ProtectedRoute = ({ redirectTo = '/' }: ProtectedRouteProps) => {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isLoading } = useAuth();
+
+  if (isLoading) {
+    return null;
+  }
 
   if (!isAuthenticated) {
     return <Navigate to={redirectTo} replace />;
