@@ -37,7 +37,7 @@ export const RollingPaperWriteDialog = ({ renderTrigger, userData }: Props) => {
   const { mutate: addRollingPaper, isPending } = useAddRollingPaper({
     onSuccess: () => {
       // 캐시 무효화
-      queryClient.invalidateQueries(['user', user?.id || '']);
+      queryClient.invalidateQueries({ queryKey: ['user', user?.id || ''] });
 
       setTimeout(() => {
         handleClose();
