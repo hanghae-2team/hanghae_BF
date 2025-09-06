@@ -111,6 +111,8 @@
 }
 
 @theme {
+  --breakpoint-xs: 28rem;
+
   --animate-fade-up: fade-up 0.3s ease-in-out;
 
   @keyframes fade-up {

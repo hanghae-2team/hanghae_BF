@@ -1,4 +1,4 @@
-import { Navigate, Outlet } from 'react-router';
+import { Navigate, Outlet, ScrollRestoration } from 'react-router';
 
 import { useAuth } from '@/contexts/AuthContext';
 
@@ -7,11 +7,20 @@ interface ProtectedRouteProps {
 }
 
 export const ProtectedRoute = ({ redirectTo = '/' }: ProtectedRouteProps) => {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isLoading } = useAuth();
+
+  if (isLoading) {
+    return null;
+  }
 
   if (!isAuthenticated) {
     return <Navigate to={redirectTo} replace />;
   }
 
-  return <Outlet />;
+  return (
+    <>
+      <Outlet />
+      <ScrollRestoration />
+    </>
+  );
 };

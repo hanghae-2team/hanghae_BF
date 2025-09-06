@@ -3,15 +3,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import { Error } from '@/components/Error';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
-import { HobbySelect } from '@/pages/HobbySelect';
+// import { HobbySelect } from '@/pages/HobbySelect';
 import { Login } from '@/pages/Login';
 import { NotFound } from '@/pages/NotFound';
 import { ResultDetail } from '@/pages/ResultDetail';
 import { ResultHome } from '@/pages/ResultHome';
 import { RollingList } from '@/pages/RollingList';
 import { Splash } from '@/pages/Splash';
-import { Survey } from '@/pages/Survey';
-import { SurveyComplete } from '@/pages/SurveyComplete';
+// import { Survey } from '@/pages/Survey';
+// import { SurveyComplete } from '@/pages/SurveyComplete';
 
 export const PATH = {
   SPLASH: () => '/',
@@ -61,30 +61,30 @@ const router = createBrowserRouter([
           </ErrorBoundary>
         ),
       },
-      {
-        path: PATH.SURVEY(),
-        element: (
-          <ErrorBoundary fallback={<Error />}>
-            <Survey />
-          </ErrorBoundary>
-        ),
-      },
-      {
-        path: PATH.SURVEY_COMPLETE(),
-        element: (
-          <ErrorBoundary fallback={<Error />}>
-            <SurveyComplete />
-          </ErrorBoundary>
-        ),
-      },
-      {
-        path: PATH.HOBBY_SELECT(),
-        element: (
-          <ErrorBoundary fallback={<Error />}>
-            <HobbySelect />
-          </ErrorBoundary>
-        ),
-      },
+      // {
+      //   path: PATH.SURVEY(),
+      //   element: (
+      //     <ErrorBoundary fallback={<Error />}>
+      //       <Survey />
+      //     </ErrorBoundary>
+      //   ),
+      // },
+      // {
+      //   path: PATH.SURVEY_COMPLETE(),
+      //   element: (
+      //     <ErrorBoundary fallback={<Error />}>
+      //       <SurveyComplete />
+      //     </ErrorBoundary>
+      //   ),
+      // },
+      // {
+      //   path: PATH.HOBBY_SELECT(),
+      //   element: (
+      //     <ErrorBoundary fallback={<Error />}>
+      //       <HobbySelect />
+      //     </ErrorBoundary>
+      //   ),
+      // },
     ],
   },
   {

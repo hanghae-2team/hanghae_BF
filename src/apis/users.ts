@@ -1,5 +1,6 @@
 import { collection, doc, getDoc, getDocs, updateDoc } from 'firebase/firestore';
 
+import type { RollingPaperSenderRequest } from '@/apis/rollingPapers';
 import { db } from '@/lib/firebase';
 
 // 타입 정의
@@ -10,7 +11,9 @@ export interface User {
   link: string;
   hobbies: string[];
   updatedAt?: string;
+  team: 'coach' | 'manager' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9';
   isCompleted?: boolean;
+  writedRollingPapers?: RollingPaperSenderRequest[];
 }
 
 export interface AuthResult {

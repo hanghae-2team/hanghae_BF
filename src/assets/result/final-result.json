@@ -1,0 +1,5042 @@
+{
+  "0miiii": {
+    "top10": [
+      {
+        "targetId": "devchangjun",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 6,
+        "values": 4,
+        "personality": 8,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 9,
+        "values": 5,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 8,
+        "values": 5,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "j2h30728",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 9,
+        "values": 4,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "2Estella": {
+    "top10": [
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 8,
+        "values": 5,
+        "personality": 7,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "jung-han",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 8,
+        "values": 4,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "Amelia-Shin": {
+    "top10": [
+      {
+        "targetId": "hyojin-k",
+        "taste": 4,
+        "values": 7,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "j2h30728",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 1,
+        "values": 9,
+        "personality": 4,
+        "total": 14,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "devchangjun",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "k-sang-soo",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "BBAK-jun": {
+    "top10": [
+      {
+        "targetId": "chb6734",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hty0525",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 9,
+        "values": 7,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "unseoJang",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 8,
+        "values": 8,
+        "personality": 1,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 8,
+        "values": 7,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 6,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 7,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 5,
+        "values": 8,
+        "personality": 2,
+        "total": 15,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "BangDori": {
+    "top10": [
+      {
+        "targetId": "realstone2",
+        "taste": 7,
+        "values": 9,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 9,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "esoby",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 8,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "shiren",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "areumH",
+        "taste": 6,
+        "values": 6,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 10,
+        "values": 5,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 4,
+        "values": 8,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "DEV4N4": {
+    "top10": [
+      {
+        "targetId": "creco-hanghae",
+        "taste": 10,
+        "values": 10,
+        "personality": 9,
+        "total": 29,
+        "adjustScore": 96
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 5,
+        "values": 7,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 10,
+        "values": 6,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 7,
+        "values": 4,
+        "personality": 7,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 8,
+        "values": 7,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "Hwirin-Kim": {
+    "top10": [
+      {
+        "targetId": "DEV4N4",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "creco-hanghae",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 8,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "JHeeJinDev": {
+    "top10": [
+      {
+        "targetId": "esoby",
+        "taste": 6,
+        "values": 9,
+        "personality": 6,
+        "total": 21,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 9,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 7,
+        "values": 9,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 8,
+        "values": 5,
+        "personality": 7,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 10,
+        "values": 5,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 9,
+        "values": 6,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "JiHoon-0330": {
+    "top10": [
+      {
+        "targetId": "adds9810",
+        "taste": 3,
+        "values": 8,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 4,
+        "values": 8,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 3,
+        "values": 8,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 9,
+        "personality": 1,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "yuhyeon99",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 4,
+        "values": 7,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "JungWoo0203": {
+    "top10": [
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 8,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 8,
+        "values": 5,
+        "personality": 7,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 5,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 7,
+        "values": 5,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "JunilHwang": {
+    "top10": [
+      {
+        "targetId": "heojungseok",
+        "taste": 4,
+        "values": 8,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "areumH",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 4,
+        "values": 4,
+        "personality": 8,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 4,
+        "values": 8,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "Legitgoons": {
+    "top10": [
+      {
+        "targetId": "developer-1px",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 4,
+        "values": 7,
+        "personality": 7,
+        "total": 18,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "esoby",
+        "taste": 9,
+        "values": 6,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 3,
+        "values": 9,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hty0525",
+        "taste": 5,
+        "values": 9,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "Yangs1s": {
+    "top10": [
+      {
+        "targetId": "susmisc14",
+        "taste": 8,
+        "values": 9,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 8,
+        "values": 7,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "areumH",
+        "taste": 6,
+        "values": 5,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "YeongseoYoon-hanghae": {
+    "top10": [
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 8,
+        "values": 7,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "shiren",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 9,
+        "values": 6,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "pitangland",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 4,
+        "values": 4,
+        "personality": 8,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "Yuyeol": {
+    "top10": [
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 7,
+        "values": 4,
+        "personality": 7,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yuhyeon99",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 8,
+        "values": 5,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 4,
+        "values": 8,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 7,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 4,
+        "values": 7,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "adds-bug": {
+    "top10": [
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 9,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 76
+      },
+      {
+        "targetId": "esoby",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 8,
+        "values": 7,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 4,
+        "values": 7,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "adds9810": {
+    "top10": [
+      {
+        "targetId": "hyojin-k",
+        "taste": 10,
+        "values": 8,
+        "personality": 4,
+        "total": 22,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "shiren",
+        "taste": 8,
+        "values": 6,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 3,
+        "values": 8,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "unseoJang",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "angielxx": {
+    "top10": [
+      {
+        "targetId": "chan9yu",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "esoby",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 3,
+        "values": 6,
+        "personality": 6,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "areumH",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 7,
+        "values": 7,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 5,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 7,
+        "values": 5,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 4,
+        "values": 6,
+        "personality": 4,
+        "total": 14,
+        "adjustScore": 48
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 8,
+        "values": 6,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 48
+      }
+    ]
+  },
+  "areumH": {
+    "top10": [
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 7,
+        "personality": 7,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 6,
+        "values": 10,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 6,
+        "values": 6,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 5,
+        "values": 5,
+        "personality": 7,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 6,
+        "values": 5,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 6,
+        "values": 9,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "bebusl": {
+    "top10": [
+      {
+        "targetId": "tomatopickles404",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 7,
+        "values": 10,
+        "personality": 2,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 10,
+        "values": 6,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "creco-hanghae",
+        "taste": 10,
+        "values": 6,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "k-sang-soo",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "pitangland",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "unseoJang",
+        "taste": 6,
+        "values": 9,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "shiren",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "chan9yu": {
+    "top10": [
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 10,
+        "values": 5,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "pitangland",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "angielxx",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "chb6734": {
+    "top10": [
+      {
+        "targetId": "BBAK-jun",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "zenna9",
+        "taste": 10,
+        "values": 8,
+        "personality": 1,
+        "total": 19,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 9,
+        "values": 6,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 8,
+        "values": 7,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 7,
+        "values": 5,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 7,
+        "values": 5,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 7,
+        "values": 4,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "creco-hanghae": {
+    "top10": [
+      {
+        "targetId": "DEV4N4",
+        "taste": 10,
+        "values": 10,
+        "personality": 9,
+        "total": 29,
+        "adjustScore": 96
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 5,
+        "values": 7,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 10,
+        "values": 6,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 7,
+        "values": 4,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "yuhyeon99",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 5,
+        "values": 6,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "devchaeyoung": {
+    "top10": [
+      {
+        "targetId": "eveneul",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "areumH",
+        "taste": 3,
+        "values": 8,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "nimusmix",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "esoby",
+        "taste": 4,
+        "values": 6,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 5,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "devchangjun": {
+    "top10": [
+      {
+        "targetId": "0miiii",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 5,
+        "values": 8,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "j2h30728",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 5,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 5,
+        "personality": 6,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 6,
+        "values": 5,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 8,
+        "values": 5,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 5,
+        "values": 5,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "developer-1px": {
+    "top10": [
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 8,
+        "values": 9,
+        "personality": 4,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 7,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 8,
+        "values": 9,
+        "personality": 2,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 9,
+        "values": 6,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "esoby": {
+    "top10": [
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 6,
+        "values": 9,
+        "personality": 6,
+        "total": 21,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 5,
+        "values": 9,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 9,
+        "values": 6,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 2,
+        "values": 8,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "eveneul": {
+    "top10": [
+      {
+        "targetId": "esoby",
+        "taste": 5,
+        "values": 9,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 4,
+        "values": 7,
+        "personality": 7,
+        "total": 18,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 4,
+        "values": 7,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "areumH",
+        "taste": 6,
+        "values": 9,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 2,
+        "values": 8,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 1,
+        "values": 8,
+        "personality": 5,
+        "total": 14,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "heojungseok": {
+    "top10": [
+      {
+        "targetId": "areumH",
+        "taste": 6,
+        "values": 10,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 4,
+        "values": 8,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 6,
+        "values": 5,
+        "personality": 8,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "hty0525": {
+    "top10": [
+      {
+        "targetId": "BBAK-jun",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 5,
+        "values": 9,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 5,
+        "values": 9,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 8,
+        "values": 7,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 10,
+        "personality": 0,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 4,
+        "values": 7,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "pitangland",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "hyemin-teamsparta": {
+    "top10": [
+      {
+        "targetId": "developer-1px",
+        "taste": 8,
+        "values": 9,
+        "personality": 4,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 3,
+        "values": 9,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "shiren",
+        "taste": 6,
+        "values": 6,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 5,
+        "values": 9,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "hyojin-k": {
+    "top10": [
+      {
+        "targetId": "areumH",
+        "taste": 7,
+        "values": 7,
+        "personality": 7,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 10,
+        "values": 8,
+        "personality": 4,
+        "total": 22,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 8,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 7,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 9,
+        "values": 6,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      }
+    ]
+  },
+  "hyunzsu": {
+    "top10": [
+      {
+        "targetId": "tomatopickles404",
+        "taste": 8,
+        "values": 8,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 9,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 8,
+        "values": 6,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "chb6734",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 5,
+        "values": 6,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "esoby",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 7,
+        "values": 3,
+        "personality": 7,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "shiren",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "j2h30728": {
+    "top10": [
+      {
+        "targetId": "devchangjun",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "zenna9",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 3,
+        "values": 8,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 5,
+        "values": 6,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 5,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 5,
+        "values": 7,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "creco-hanghae",
+        "taste": 4,
+        "values": 8,
+        "personality": 2,
+        "total": 14,
+        "adjustScore": 48
+      }
+    ]
+  },
+  "jeongmingi123": {
+    "top10": [
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 9,
+        "values": 8,
+        "personality": 6,
+        "total": 23,
+        "adjustScore": 74
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 7,
+        "personality": 7,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 4,
+        "values": 9,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 9,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 60
+      }
+    ]
+  },
+  "jinsoul75": {
+    "top10": [
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "k-sang-soo",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 3,
+        "values": 8,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 4,
+        "values": 6,
+        "personality": 5,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "jun17183": {
+    "top10": [
+      {
+        "targetId": "devchangjun",
+        "taste": 5,
+        "values": 8,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 7,
+        "values": 5,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 10,
+        "values": 5,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 8,
+        "values": 4,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 8,
+        "values": 5,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 1,
+        "values": 9,
+        "personality": 4,
+        "total": 14,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "jung-han": {
+    "top10": [
+      {
+        "targetId": "2Estella",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "nimusmix",
+        "taste": 4,
+        "values": 7,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yuhyeon99",
+        "taste": 5,
+        "values": 4,
+        "personality": 7,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 3,
+        "personality": 7,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 7,
+        "values": 7,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "yangchanghun",
+        "taste": 5,
+        "values": 7,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 6,
+        "values": 6,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 48
+      },
+      {
+        "targetId": "hty0525",
+        "taste": 9,
+        "values": 6,
+        "personality": 1,
+        "total": 16,
+        "adjustScore": 46
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 5,
+        "values": 6,
+        "personality": 3,
+        "total": 14,
+        "adjustScore": 46
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 7,
+        "values": 5,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 46
+      }
+    ]
+  },
+  "k-sang-soo": {
+    "top10": [
+      {
+        "targetId": "bebusl",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 4,
+        "values": 7,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 5,
+        "values": 9,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 8,
+        "values": 6,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 6,
+        "values": 5,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 6,
+        "values": 8,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "ldhldh07": {
+    "top10": [
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 5,
+        "values": 7,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "creco-hanghae",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 9,
+        "values": 4,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "lieblichoi": {
+    "top10": [
+      {
+        "targetId": "adds-bug",
+        "taste": 6,
+        "values": 9,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 76
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 7,
+        "values": 8,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 74
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 7,
+        "personality": 7,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 7,
+        "values": 8,
+        "personality": 6,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 7,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "areumH",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      }
+    ]
+  },
+  "minjaeleee": {
+    "top10": [
+      {
+        "targetId": "jeongmingi123",
+        "taste": 4,
+        "values": 9,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "esoby",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hty0525",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "k-sang-soo",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "nemobim": {
+    "top10": [
+      {
+        "targetId": "taeyeong0814",
+        "taste": 6,
+        "values": 10,
+        "personality": 7,
+        "total": 23,
+        "adjustScore": 80
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 8,
+        "personality": 6,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 5,
+        "values": 7,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 5,
+        "values": 8,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 8,
+        "values": 7,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 5,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 9,
+        "values": 5,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "nimusmix": {
+    "top10": [
+      {
+        "targetId": "jung-han",
+        "taste": 4,
+        "values": 7,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "devchaeyoung",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 6,
+        "values": 6,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 6,
+        "values": 8,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 6,
+        "values": 4,
+        "personality": 6,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 6,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "pitangland": {
+    "top10": [
+      {
+        "targetId": "suhyeon57",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yangchanghun",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "q1Lim": {
+    "top10": [
+      {
+        "targetId": "realstone2",
+        "taste": 8,
+        "values": 7,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 7,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 7,
+        "values": 5,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 7,
+        "values": 6,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JunilHwang",
+        "taste": 5,
+        "values": 8,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "realstone2": {
+    "top10": [
+      {
+        "targetId": "q1Lim",
+        "taste": 8,
+        "values": 7,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 9,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 70
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 8,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "shiren",
+        "taste": 4,
+        "values": 8,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 8,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "tomatopickles404",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 9,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 60
+      }
+    ]
+  },
+  "shiren": {
+    "top10": [
+      {
+        "targetId": "realstone2",
+        "taste": 4,
+        "values": 8,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 8,
+        "values": 6,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 6,
+        "values": 6,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 8,
+        "values": 6,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "yangchanghun",
+        "taste": 4,
+        "values": 7,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "soyalattee": {
+    "top10": [
+      {
+        "targetId": "taeyeong0814",
+        "taste": 7,
+        "values": 7,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 8,
+        "values": 7,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 5,
+        "values": 7,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 5,
+        "values": 6,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 8,
+        "values": 8,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "chb6734",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 9,
+        "values": 6,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "suhyeon57": {
+    "top10": [
+      {
+        "targetId": "pitangland",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "susmisc14",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "creco-hanghae",
+        "taste": 7,
+        "values": 5,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jinsoul75",
+        "taste": 3,
+        "values": 8,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 9,
+        "values": 7,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "susmisc14": {
+    "top10": [
+      {
+        "targetId": "creco-hanghae",
+        "taste": 5,
+        "values": 7,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 8,
+        "values": 9,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "DEV4N4",
+        "taste": 5,
+        "values": 7,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "suhyeon57",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 5,
+        "values": 7,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 7,
+        "values": 6,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 4,
+        "values": 8,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "taeyeong0814": {
+    "top10": [
+      {
+        "targetId": "nemobim",
+        "taste": 6,
+        "values": 10,
+        "personality": 7,
+        "total": 23,
+        "adjustScore": 80
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 8,
+        "personality": 7,
+        "total": 22,
+        "adjustScore": 74
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 7,
+        "values": 7,
+        "personality": 6,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 6,
+        "personality": 6,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "areumH",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 8,
+        "values": 5,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 56
+      }
+    ]
+  },
+  "tomatopickles404": {
+    "top10": [
+      {
+        "targetId": "JungWoo0203",
+        "taste": 8,
+        "values": 8,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 8,
+        "values": 8,
+        "personality": 5,
+        "total": 21,
+        "adjustScore": 68
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 8,
+        "values": 8,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 9,
+        "values": 7,
+        "personality": 4,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "developer-1px",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "minjaeleee",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "Legitgoons",
+        "taste": 8,
+        "values": 8,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 60
+      }
+    ]
+  },
+  "tooth-is-silver": {
+    "top10": [
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 8,
+        "values": 9,
+        "personality": 5,
+        "total": 22,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "ldhldh07",
+        "taste": 5,
+        "values": 7,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 7,
+        "values": 8,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "JungWoo0203",
+        "taste": 8,
+        "values": 5,
+        "personality": 7,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 8,
+        "values": 7,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "heojungseok",
+        "taste": 6,
+        "values": 5,
+        "personality": 8,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "soyalattee",
+        "taste": 8,
+        "values": 7,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 7,
+        "values": 10,
+        "personality": 2,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 9,
+        "values": 6,
+        "personality": 5,
+        "total": 20,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      }
+    ]
+  },
+  "unseoJang": {
+    "top10": [
+      {
+        "targetId": "bebusl",
+        "taste": 6,
+        "values": 9,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "adds9810",
+        "taste": 6,
+        "values": 7,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 6,
+        "values": 9,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 4,
+        "values": 9,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "BBAK-jun",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 7,
+        "values": 9,
+        "personality": 1,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "pitangland",
+        "taste": 6,
+        "values": 9,
+        "personality": 1,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 8,
+        "values": 7,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "shiren",
+        "taste": 4,
+        "values": 7,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 52
+      }
+    ]
+  },
+  "yangchanghun": {
+    "top10": [
+      {
+        "targetId": "pitangland",
+        "taste": 10,
+        "values": 7,
+        "personality": 3,
+        "total": 20,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "shiren",
+        "taste": 4,
+        "values": 7,
+        "personality": 6,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 9,
+        "values": 3,
+        "personality": 7,
+        "total": 19,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 10,
+        "values": 5,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 8,
+        "values": 7,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "nemobim",
+        "taste": 8,
+        "values": 5,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "chan9yu",
+        "taste": 10,
+        "values": 6,
+        "personality": 2,
+        "total": 18,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 6,
+        "values": 5,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "taeyeong0814",
+        "taste": 6,
+        "values": 5,
+        "personality": 5,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 7,
+        "values": 5,
+        "personality": 4,
+        "total": 16,
+        "adjustScore": 50
+      }
+    ]
+  },
+  "yhun940731": {
+    "top10": [
+      {
+        "targetId": "jeongmingi123",
+        "taste": 5,
+        "values": 8,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 66
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 6,
+        "values": 9,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 64
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 7,
+        "values": 6,
+        "personality": 6,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "q1Lim",
+        "taste": 7,
+        "values": 8,
+        "personality": 4,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "Yangs1s",
+        "taste": 6,
+        "values": 7,
+        "personality": 5,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "eveneul",
+        "taste": 4,
+        "values": 9,
+        "personality": 4,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 8,
+        "values": 6,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "JHeeJinDev",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "yuhyeon99": {
+    "top10": [
+      {
+        "targetId": "BangDori",
+        "taste": 7,
+        "values": 7,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 7,
+        "values": 8,
+        "personality": 3,
+        "total": 18,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "yhun940731",
+        "taste": 5,
+        "values": 7,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 58
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 6,
+        "values": 8,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "jeongmingi123",
+        "taste": 6,
+        "values": 9,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "JiHoon-0330",
+        "taste": 5,
+        "values": 8,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "adds-bug",
+        "taste": 3,
+        "values": 9,
+        "personality": 3,
+        "total": 15,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "hyunzsu",
+        "taste": 7,
+        "values": 7,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "jung-han",
+        "taste": 5,
+        "values": 4,
+        "personality": 7,
+        "total": 16,
+        "adjustScore": 54
+      },
+      {
+        "targetId": "lieblichoi",
+        "taste": 7,
+        "values": 8,
+        "personality": 2,
+        "total": 17,
+        "adjustScore": 54
+      }
+    ]
+  },
+  "yunwoo-yu": {
+    "top10": [
+      {
+        "targetId": "jeongmingi123",
+        "taste": 9,
+        "values": 8,
+        "personality": 6,
+        "total": 23,
+        "adjustScore": 74
+      },
+      {
+        "targetId": "tooth-is-silver",
+        "taste": 8,
+        "values": 9,
+        "personality": 5,
+        "total": 22,
+        "adjustScore": 72
+      },
+      {
+        "targetId": "bebusl",
+        "taste": 7,
+        "values": 9,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 7,
+        "values": 7,
+        "personality": 5,
+        "total": 19,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "realstone2",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "shiren",
+        "taste": 5,
+        "values": 9,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 62
+      },
+      {
+        "targetId": "0miiii",
+        "taste": 6,
+        "values": 4,
+        "personality": 8,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "BangDori",
+        "taste": 4,
+        "values": 8,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "YeongseoYoon-hanghae",
+        "taste": 6,
+        "values": 8,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 60
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 9,
+        "values": 7,
+        "personality": 3,
+        "total": 19,
+        "adjustScore": 58
+      }
+    ]
+  },
+  "zenna9": {
+    "top10": [
+      {
+        "targetId": "chb6734",
+        "taste": 10,
+        "values": 8,
+        "personality": 1,
+        "total": 19,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hyemin-teamsparta",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "hyojin-k",
+        "taste": 8,
+        "values": 6,
+        "personality": 4,
+        "total": 18,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "j2h30728",
+        "taste": 6,
+        "values": 6,
+        "personality": 5,
+        "total": 17,
+        "adjustScore": 56
+      },
+      {
+        "targetId": "Amelia-Shin",
+        "taste": 6,
+        "values": 7,
+        "personality": 3,
+        "total": 16,
+        "adjustScore": 52
+      },
+      {
+        "targetId": "Hwirin-Kim",
+        "taste": 7,
+        "values": 7,
+        "personality": 2,
+        "total": 16,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "Yuyeol",
+        "taste": 5,
+        "values": 6,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "jun17183",
+        "taste": 5,
+        "values": 6,
+        "personality": 4,
+        "total": 15,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "yunwoo-yu",
+        "taste": 9,
+        "values": 5,
+        "personality": 3,
+        "total": 17,
+        "adjustScore": 50
+      },
+      {
+        "targetId": "2Estella",
+        "taste": 4,
+        "values": 7,
+        "personality": 3,
+        "total": 14,
+        "adjustScore": 48
+      }
+    ]
+  }
+}

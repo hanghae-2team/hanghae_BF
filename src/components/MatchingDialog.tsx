@@ -1,109 +1,129 @@
+import { useQuery } from '@tanstack/react-query';
+import { Star } from 'lucide-react';
 import { type ReactNode, useState } from 'react';
+import { useParams } from 'react-router';
 
+import { getSurveyResult } from '@/apis/surveys';
+import { getUser } from '@/apis/users';
+import matchText from '@/assets/result/match-text.json';
+import { ComparisonRadarChart } from '@/components/ComparisonRadarChart';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/elements/dialog';
+import type { MatchResultWithUser } from '@/types/result';
+import { type ChartWithUserData, convertSurveyToChartData } from '@/utils/chartUtils';
 
-import { ComparisonRadarChart } from './RadarChart';
-
-interface UserData {
-  name: string;
-  taste: number; // 입맛 (0-100)
-  values: number; // 가치관 (0-100)
-  personality: number; // 성향 (0-100)
+interface MatchText {
+  total: number;
+  id: string;
+  title: string;
+  values: string;
+  personality: string;
+  taste: string;
 }
 
-// Mock 데이터
-const DUMMY_USER1_DATA: UserData = {
-  name: '김항해',
-  taste: 85, // 매운 음식을 좋아함
-  values: 75, // 진취적이고 도전적
-  personality: 90, // 외향적이고 활발함
-};
-
-const DUMMY_USER2_DATA: UserData = {
-  name: '김르탄',
-  taste: 60, // 단맛을 선호
-  values: 95, // 안정적이고 신중함
-  personality: 70, // 내향적이지만 따뜻함
-};
+type MatchTextData = Record<string, MatchText[]>;
 
 interface Props {
   renderTrigger: () => ReactNode;
+  user: MatchResultWithUser;
 }
 
-export const MatchingDialog = ({ renderTrigger }: Props) => {
+export const MatchingDialog = ({ renderTrigger, user }: Props) => {
+  const { id } = useParams();
   const [isMatchingOpen, setIsMatchingOpen] = useState(false);
 
-  // 궁합 점수 계산
-  const calculateCompatibility = (user1: UserData, user2: UserData) => {
-    const tasteDiff = Math.abs(user1.taste - user2.taste);
-    const valuesDiff = Math.abs(user1.values - user2.values);
-    const personalityDiff = Math.abs(user1.personality - user2.personality);
-    const averageDiff = (tasteDiff + valuesDiff + personalityDiff) / 3;
-    const compatibilityScore = Math.round(100 - averageDiff);
+  const { data: userData } = useQuery({
+    queryKey: ['user', id],
+    queryFn: () => getUser(id!),
+    select: (res) => res.data,
+    enabled: !!id,
+  });
+  // 현재 사용자의 설문 데이터
 
-    return Math.max(compatibilityScore, 0);
+  const { data: currentUserSurvey } = useQuery({
+    queryKey: ['survey', id],
+    queryFn: () => getSurveyResult(id!),
+    select: (res) => res.data,
+    enabled: !!id,
+  });
+
+  // 상대방의 설문 데이터
+  const { data: targetUserSurvey } = useQuery({
+    queryKey: ['survey', user.id],
+    queryFn: () => getSurveyResult(user.id),
+    select: (res) => res.data,
+    enabled: !!user.id,
+  });
+
+  if (!currentUserSurvey || !targetUserSurvey || !userData) {
+    return null;
+  }
+
+  const currentUserChartData: ChartWithUserData = {
+    ...convertSurveyToChartData(currentUserSurvey, userData.name),
+    id: userData?.id,
+    image: userData?.image,
+    link: userData?.link,
+    adjustScore: user.adjustScore,
+  };
+  const targetUserChartData: ChartWithUserData = {
+    ...convertSurveyToChartData(targetUserSurvey, user.name),
+    id: user.id,
+    image: user.image,
+    link: user.link,
+    adjustScore: user.adjustScore,
   };
 
-  const compatibilityScore = calculateCompatibility(DUMMY_USER1_DATA, DUMMY_USER2_DATA);
+  const matchTextData = (matchText as MatchTextData)[userData.id].find((item) => user.id === item.id);
 
   return (
     <Dialog open={isMatchingOpen} onOpenChange={setIsMatchingOpen}>
       <DialogTrigger asChild className="cursor-pointer">
         {renderTrigger()}
-        {/* <Button>매칭 모달 임시 버튼</Button> */}
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] overflow-y-auto overflow-x-hidden" style={{ scrollbarWidth: 'none' }}>
         <DialogHeader>
-          <DialogTitle className="text-center text-xl">
-            {DUMMY_USER1_DATA.name}님과 {DUMMY_USER2_DATA.name}님의 궁합
+          <DialogTitle className="text-center text-xl flex items-center justify-center gap-2">
+            {userData?.name}님과 {user.name}님의 궁합
           </DialogTitle>
           <DialogDescription className="sr-only"></DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">
           {/* 궁합 점수 */}
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">{compatibilityScore}점</div>
-            <div className="text-muted-foreground">
-              {compatibilityScore >= 80
-                ? '환상의 궁합!'
-                : compatibilityScore >= 60
-                  ? '좋은 궁합입니다!'
-                  : compatibilityScore >= 40
-                    ? '괜찮은 궁합이에요.'
-                    : '서로 다른 매력이 있어요.'}
+          <div className="text-center p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-pink-200">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <Star className="w-4 h-4 text-yellow-500" />
+              <span className="text-sm font-medium text-gray-600">궁합 점수</span>
+            </div>
+            <div className="text-3xl font-bold text-primary mb-2">{user.adjustScore}점</div>
+            <div className="text-muted-foreground text-sm bg-white/60 px-3 py-1 rounded-full inline-block">
+              {matchTextData?.title}
             </div>
           </div>
 
           {/* 차트 영역 */}
-          <div>
-            <h3 className="text-lg font-semibold text-center">성향 비교 차트</h3>
-            <ComparisonRadarChart user1Data={DUMMY_USER1_DATA} user2Data={DUMMY_USER2_DATA} />
+          <div className="bg-gray-50 rounded-lg p-4">
+            <ComparisonRadarChart
+              currentUserChartData={currentUserChartData}
+              targetUserChartData={targetUserChartData}
+            />
           </div>
 
           {/* 상세 분석 */}
-          <div className="bg-gray-100 rounded-lg space-y-3 w-full p-4">
-            <h4 className="font-semibold">상세 분석</h4>
-            <div className=" grid grid-cols-3 gap-4 text-sm">
-              <div>
-                <span className="font-medium">입맛:</span>{' '}
-                <span className="text-muted-foreground">
-                  {Math.abs(DUMMY_USER1_DATA.taste - DUMMY_USER2_DATA.taste) <= 20 ? '비슷한 취향' : '서로 다른 취향'}
-                </span>
+          <div className="bg-gradient-to-br from-gray-100 to-pink-50 rounded-lg space-y-4 w-full p-4">
+            <h4 className="font-semibold text-xl flex items-center gap-2">상세 분석</h4>
+            <div className="flex flex-col space-y-4 text-sm">
+              <div className="flex flex-col gap-1 bg-white/60 p-3 rounded-lg">
+                <p className="font-medium text-lg text-purple-700">가치관</p>
+                <p className="text-gray-700">{matchTextData?.values}</p>
               </div>
-              <div>
-                <span className="font-medium">가치관:</span>{' '}
-                <span className="text-muted-foreground">
-                  {Math.abs(DUMMY_USER1_DATA.values - DUMMY_USER2_DATA.values) <= 20 ? '비슷한 가치관' : '상호 보완적'}
-                </span>
+              <div className="flex flex-col gap-1 bg-white/60 p-3 rounded-lg">
+                <p className="font-medium text-lg text-blue-700">성향</p>
+                <p className="text-gray-700">{matchTextData?.personality}</p>
               </div>
-              <div>
-                <span className="font-medium">성향:</span>{' '}
-                <span className="text-muted-foreground">
-                  {Math.abs(DUMMY_USER1_DATA.personality - DUMMY_USER2_DATA.personality) <= 20
-                    ? '비슷한 성향'
-                    : '균형잡힌 조합'}
-                </span>
+              <div className="flex flex-col gap-1 bg-white/60 p-3 rounded-lg">
+                <span className="font-medium text-lg text-pink-700">입맛</span>
+                <span className="text-gray-700">{matchTextData?.taste}</span>
               </div>
             </div>
           </div>

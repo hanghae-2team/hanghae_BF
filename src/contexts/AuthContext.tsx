@@ -3,19 +3,11 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 
 import type { User } from '@/apis/users';
 
-// 사용자 정보 타입 정의
-// export interface User {
-//   name: string;
-//   id: string;
-//   image: string;
-//   link: string;
-//   hobbies?: string[];
-// }
-
 // AuthContext 타입 정의
 interface AuthContextType {
   user: User | null;
   isAuthenticated: boolean;
+  isLoading: boolean;
   login: (userData?: User) => void;
   logout: () => void;
 }
@@ -31,6 +23,7 @@ interface AuthProviderProps {
 // AuthProvider 컴포넌트
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // 컴포넌트 마운트 시 localStorage에서 사용자 정보 복원
   useEffect(() => {
@@ -42,7 +35,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       } catch (error) {
         console.error('저장된 사용자 정보를 불러오는데 실패했습니다:', error);
         localStorage.removeItem('user');
+      } finally {
+        setIsLoading(false);
       }
+    } else {
+      // savedUser가 없는 경우에도 로딩 완료 처리
+      setIsLoading(false);
     }
   }, []);
 
@@ -68,6 +66,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const value: AuthContextType = {
     user,
     isAuthenticated,
+    isLoading,
     login,
     logout,
   };
