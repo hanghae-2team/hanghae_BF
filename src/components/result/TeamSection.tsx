@@ -2,8 +2,6 @@ import { Link } from 'react-router';
 
 import type { User } from '@/apis/users';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
-import { cn } from '@/lib/utils';
-import { isSurveyComplete, notTakenSurveyUsersStyle } from '@/utils/UserUtils';
 
 interface TeamSectionProps {
   teamName: string;
@@ -24,16 +22,8 @@ export const TeamSection = ({ teamName, users }: TeamSectionProps) => {
       {/* 사용자 그리드 */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-4">
         {users.map((user) => {
-          const disabled = !isSurveyComplete(user.id);
-
           return (
-            <Link
-              to={user.id}
-              key={user.id}
-              className={cn({
-                [notTakenSurveyUsersStyle]: disabled,
-              })}
-            >
+            <Link to={user.id} key={user.id}>
               <div className="group w-full flex justify-start items-center gap-4 p-2 overflow-hidden rounded-lg border bg-white/80 shadow-sm shadow-zinc-200 animate-fade-up transition-transform duration-150 ease-out hover:scale-105">
                 <Avatar className="size-12 sm:size-20 rounded-md">
                   <AvatarImage src={user.image} />

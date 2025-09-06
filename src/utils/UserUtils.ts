@@ -67,18 +67,3 @@ export const getSortedTeamGroups = (users: User[]): Array<{ teamName: string; us
       users: groups[teamName],
     }));
 };
-
-export const isSurveyComplete = (userId: string) => {
-  const hasNotTakenSurveyUsers = new Set([
-    'Elli-Lee',
-    'JangRuBin2',
-    'annkimm',
-    'geonhwiii',
-    'parksangsoo',
-    'yeonsookk',
-  ]);
-
-  return !hasNotTakenSurveyUsers.has(userId);
-};
-
-export const notTakenSurveyUsersStyle = 'pointer-events-none text-gray-500 brightness-90 opacity-90 cursor-not-allowed';
