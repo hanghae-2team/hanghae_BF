@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router';
 
 import { getUser } from '@/apis/users';
+import cryFaceSrc from '@/assets/images/result/cry_face.svg';
 import kissingCatSrc from '@/assets/images/result/kissing_cat.svg';
 import finalResult from '@/assets/result/final-result.json';
 import MatchingSection from '@/components/result/MatchingSection';
@@ -27,18 +28,16 @@ export const ResultDetail = () => {
 
   const surveyResult = (finalResult as FinalResultJson)[id as string];
 
-  if (!surveyResult) {
-    return <NotFound />;
-  }
-
-  const top10 = surveyResult.top10.map((result) => {
-    const userInfo = (users as UsersType)[result.targetId];
-    return {
-      ...result,
-      ...userInfo,
-      id: result.targetId,
-    };
-  });
+  const top10 = surveyResult
+    ? surveyResult.top10.map((result) => {
+        const userInfo = (users as UsersType)[result.targetId];
+        return {
+          ...result,
+          ...userInfo,
+          id: result.targetId,
+        };
+      })
+    : [];
 
   if (isError) {
     return <NotFound />;
@@ -51,16 +50,24 @@ export const ResultDetail = () => {
         {userData && (
           <>
             <UserProfile userData={userData} />
-            <Card className="flex flex-col gap-4 p-4 md:p-8 lg:flex-row">
-              <div className="my-8 grow">
-                <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
-                  <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
-                  찰떡궁합
-                </h2>
-                <Separator />
-                <MatchingSection matchResults={top10} />
-              </div>
-            </Card>
+            {top10.length ? (
+              <Card className="flex flex-col gap-4 p-4 md:p-8 lg:flex-row">
+                <div className="my-8 grow">
+                  <h2 className="font-PyeongchangPeace text-2xl font-bold mb-4 text-center  flex justify-center items-center">
+                    <img src={kissingCatSrc} alt="클로버 이모지" className="inline ml-2" width={32} height={32} />
+                    찰떡궁합
+                  </h2>
+                  <Separator />
+                  <MatchingSection matchResults={top10} />
+                </div>
+              </Card>
+            ) : (
+              <Card className="flex flex-row gap-0 p-4 md:p-8 lg:flex-row h-120 justify-center items-center">
+                설문결과가 없어요
+                <img src={cryFaceSrc} alt="cry face" />
+              </Card>
+            )}
+
             <RollingPaperSection />
           </>
         )}
