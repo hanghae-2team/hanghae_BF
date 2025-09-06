@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -18,13 +16,13 @@ const ResultDetailBreadCrumb = ({ userName, className }: Props) => {
     <Breadcrumb className={className}>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/result" className="text-xs text-gray-200 hover:text-gray-100">
+          <BreadcrumbLink href="/result" className="text-gray-200 hover:text-gray-100">
             홈
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage className="text-xs text-white">{userName}</BreadcrumbPage>
+          <BreadcrumbPage className="text-white">{userName}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
