@@ -8,7 +8,7 @@ import { TeamSection } from '@/components/result/TeamSection';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/elements/button';
 import { Layout } from '@/elements/layout';
-import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/userUtils';
+import { convertRawDataToUsers, getSortedTeamGroups } from '@/utils/UserUtils';
 
 export const ResultHome = () => {
   const navigate = useNavigate();
