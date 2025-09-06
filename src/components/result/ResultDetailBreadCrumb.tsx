@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router';
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -16,8 +19,10 @@ const ResultDetailBreadCrumb = ({ userName, className }: Props) => {
     <Breadcrumb className={className}>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/result" className="text-gray-200 hover:text-gray-100">
-            홈
+          <BreadcrumbLink asChild>
+            <Link to="/result" className="text-gray-200 hover:text-gray-100">
+              홈
+            </Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
