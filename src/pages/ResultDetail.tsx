@@ -7,7 +7,7 @@ import kissingCatSrc from '@/assets/images/result/kissing_cat.svg';
 import finalResult from '@/assets/result/final-result.json';
 import MatchingSection from '@/components/result/MatchingSection';
 import ResultDetailBreadCrumb from '@/components/result/ResultDetailBreadCrumb';
-import RollingPaperSection from '@/components/result/RollingPaperSection';
+import RollingPaperList from '@/components/result/RollingPaperList';
 import UserProfile from '@/components/result/UserProfile';
 import users from '@/data/users.json';
 import { Card } from '@/elements/card';
@@ -94,7 +94,7 @@ export const ResultDetail = () => {
                 <div className="mt-8 w-24 h-0.5 bg-gradient-to-r from-transparent via-blue-300 to-transparent" />
               </Card>
             )}
-            <RollingPaperSection />
+            {id && <RollingPaperList id={id} />}
           </>
         )}
       </Card>
