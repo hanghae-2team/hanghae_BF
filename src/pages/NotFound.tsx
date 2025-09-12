@@ -134,7 +134,7 @@ export const NotFound = () => {
             <span className="text-blue-100 font-medium">길을 잃으셨나요?</span>
           </div>
           <p className="text-sm text-blue-200/70">
-            항해99에서는 모든 동료들이 함께 목적지를 찾아갑니다.
+            항해플러스에서는 모든 동료들이 함께 목적지를 찾아갑니다.
             <br />
             혼자가 아니니까 걱정하지 마세요!
           </p>
