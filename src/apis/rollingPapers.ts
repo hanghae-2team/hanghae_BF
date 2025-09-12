@@ -27,6 +27,19 @@ export interface RollingPaperSenderRequest {
   receiverId: string;
 }
 
+export interface RollingPaperResult extends RollingPaper {
+  id: number;
+}
+export interface RollingPaperResponse {
+  rollingPapers: RollingPaperResult[];
+}
+
+export const getRollingPaper = async (receiverId: string): Promise<RollingPaperResponse> => {
+  const rollingPaperDocRef = doc(db, 'rollingPapers', receiverId);
+  const docSnap = await getDoc(rollingPaperDocRef);
+  return docSnap.data() as RollingPaperResponse;
+};
+
 export const useAddRollingPaper = ({
   onSuccess,
   onError,
