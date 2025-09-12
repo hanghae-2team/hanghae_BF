@@ -8,7 +8,6 @@ import { Login } from '@/pages/Login';
 import { NotFound } from '@/pages/NotFound';
 import { ResultDetail } from '@/pages/ResultDetail';
 import { ResultHome } from '@/pages/ResultHome';
-import { RollingList } from '@/pages/RollingList';
 import { Splash } from '@/pages/Splash';
 // import { Survey } from '@/pages/Survey';
 // import { SurveyComplete } from '@/pages/SurveyComplete';
@@ -37,14 +36,6 @@ const router = createBrowserRouter([
   {
     element: <ProtectedRoute />,
     children: [
-      {
-        path: PATH.ROLLING_LIST(),
-        element: (
-          <ErrorBoundary fallback={<Error />}>
-            <RollingList />
-          </ErrorBoundary>
-        ),
-      },
       {
         path: PATH.RESULT_HOME(),
         element: (

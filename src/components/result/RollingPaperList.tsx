@@ -63,7 +63,9 @@ const RollingPaperList = ({ id }: { id: string }) => {
           </div>
           <div className="flex items-center justify-end gap-2">
             <img src={letterSvg} alt="편지" className="w-6 h-6" />
-            <p className="text-sm text-gray-500 text-end">총 {rollingPapers.length}개의 메시지가 있습니다</p>
+            <p className="text-sm text-gray-500 text-end whitespace-nowrap">
+              총 {rollingPapers.length}개의 메시지가 도착했습니다
+            </p>
           </div>
         </CardHeader>
 
@@ -71,7 +73,7 @@ const RollingPaperList = ({ id }: { id: string }) => {
           <div className="space-y-4">
             {/* Rolling Papers Grid */}
             <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4">
+              <div className="grid grid-cols-1 min-[540px]:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-4">
                 {rollingPapersData?.rollingPapers.map((paper, index) => (
                   <Card
                     key={paper.id}
@@ -80,11 +82,11 @@ const RollingPaperList = ({ id }: { id: string }) => {
                   >
                     <CardContent className="p-0">
                       <img src={ROLLING_PAPER_IMAGES[index % 6]} alt="롤링페이퍼 배경" className="w-full h-auto" />
-                      <div className="absolute inset-0 p-6">
-                        <h3 className="font-semibold text-card-foreground text-lg mt-4 sm:mt-8">
+                      <div className="absolute inset-0 p-6  min-[540px]:p-4 lg:p-5">
+                        <h3 className="font-semibold text-card-foreground text-md mt-4 sm:mt-8">
                           {paper.writer !== '' ? paper.writer : '익명'}
                         </h3>
-                        <p className="text-card-foreground line-clamp-4 sm:line-clamp-8 lg:line-clamp-4 leading-relaxed mt-1 sm:mt-3">
+                        <p className="text-sm text-card-foreground line-clamp-5 min-[318px]:line-clamp-7  min-[338px]:line-clamp-8 min-[358px]:line-clamp-9 min-[410px]:line-clamp-12 min-[540px]:line-clamp-8 min-[660px]:line-clamp-10 lg:line-clamp-9 leading-relaxed mt-1 sm:mt-3">
                           {paper.message}
                         </p>
                       </div>
@@ -102,8 +104,8 @@ const RollingPaperList = ({ id }: { id: string }) => {
 
       {/* Modal Overlay */}
       {selectedPaper && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-2 z-50">
-          <div className="relative max-w-2xl w-full">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-2 z-50" onClick={closeModal}>
+          <div className="relative max-w-2xl w-full" onClick={(e) => e.stopPropagation()}>
             {/* Close Button */}
             <Button
               variant="outline"
