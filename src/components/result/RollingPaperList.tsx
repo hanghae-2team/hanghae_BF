@@ -82,7 +82,7 @@ const RollingPaperList = ({ id }: { id: string }) => {
                   >
                     <CardContent className="p-0">
                       <img src={ROLLING_PAPER_IMAGES[index % 6]} alt="롤링페이퍼 배경" className="w-full h-auto" />
-                      <div className="absolute inset-0 p-6  min-[540px]:p-4 lg:p-5">
+                      <div className="absolute inset-0 p-6 min-[540px]:p-4 lg:p-5">
                         <h3 className="font-semibold text-card-foreground text-md mt-4 sm:mt-8">
                           {paper.writer !== '' ? paper.writer : '익명'}
                         </h3>
@@ -110,32 +110,32 @@ const RollingPaperList = ({ id }: { id: string }) => {
             <Button
               variant="outline"
               size="icon"
-              className="absolute -top-12 right-0 bg-[#d9d9d900] hover:bg-[#d9d9d940] rounded-full border-none w-10 h-10 p-0"
+              className="absolute -top-[-40px] right-[40px] bg-[#d9d9d900] hover:bg-[#d9d9d940] rounded-full border-none w-8 h-8 p-0"
               onClick={closeModal}
             >
-              <X size={28} />
+              <X size={32} />
             </Button>
 
             {/* Navigation Buttons */}
             <Button
               variant="outline"
-              className="absolute left-[-12px] top-1/2 transform -translate-y-1/2 bg-[#d9d9d900] hover:bg-[#d9d9d940] rounded-full border-none w-10 h-10 p-0"
+              className="absolute left-[-12px] top-1/2 transform -translate-y-1/2 bg-[#d9d9d980] hover:bg-[#d9d9d9c0] rounded-full border-none w-10 h-10 p-0"
               onClick={goToPrevious}
             >
-              <ChevronLeft size={24} />
+              <ChevronLeft size={24} className="text-gray-50" />
             </Button>
 
             <Button
               variant="outline"
-              className="absolute right-[-12px] top-1/2 transform -translate-y-1/2 bg-[#d9d9d900] hover:bg-[#d9d9d940] rounded-full border-none w-10 h-10 p-0"
+              className="absolute right-[-12px] top-1/2 transform -translate-y-1/2 bg-[#d9d9d980] hover:bg-[#d9d9d9c0] rounded-full border-none w-10 h-10 p-0"
               onClick={goToNext}
             >
-              <ChevronRight size={24} />
+              <ChevronRight size={24} className="text-gray-50" />
             </Button>
 
             {/* Modal Card */}
             <Card className="shadow-2xl m-8">
-              <CardContent className="px-6 py-8">
+              <CardContent className="px-5 lg:px-6 py-8">
                 <div className="flex justify-between items-start mb-6">
                   {currentPaper.writer !== '' ? (
                     <h2 className="text-2xl font-bold text-card-foreground">{currentPaper.writer}</h2>
@@ -143,7 +143,7 @@ const RollingPaperList = ({ id }: { id: string }) => {
                     <h2 className="text-2xl font-bold text-card-foreground">익명</h2>
                   )}
                 </div>
-                <p className="text-card-foreground text-lg leading-relaxed min-h-[100px]">{currentPaper.message}</p>
+                <p className="text-card-foreground text-md leading-relaxed min-h-[100px]">{currentPaper.message}</p>
                 <div className="mt-6 text-center">
                   <span className="text-sm text-muted-foreground">
                     {currentIndex + 1} / {rollingPapers.length}
