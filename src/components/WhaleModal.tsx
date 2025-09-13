@@ -1,6 +1,6 @@
+import last from '@/assets/images/last.png';
 import whaleSvg from '@/assets/whale.svg';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/elements/dialog';
-
 interface WhaleModalProps {
   children: React.ReactNode;
 }
@@ -58,6 +58,14 @@ export const WhaleModal = ({ children }: WhaleModalProps) => {
                   <span className="bg-white px-3 py-1 rounded-full text-xs font-medium shadow-sm">31 vs 29</span>
                 </div>
                 <div className="text-xs text-orange-600">선택지 1: 31명 (51.7%) | 선택지 2: 29명 (48.3%)</div>
+              </div>
+            </div>
+
+            {/* 마지막 젭 모습 */}
+            <div className="bg-purple-50 rounded-xl p-4 border border-purple-200">
+              <div className="text-sm font-semibold text-purple-800 mb-3">📸 13일 마지막 젭!</div>
+              <div className="flex justify-center">
+                <img src={last} alt="마지막 젭 모습" className="rounded-lg shadow-sm max-w-full h-auto" />
               </div>
             </div>
           </div>
