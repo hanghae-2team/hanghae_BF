@@ -2,7 +2,13 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 import { Button } from '@/elements/button';
 import { Card, CardContent } from '@/elements/card';
-import type { IRollingPaper } from '@/pages/RollingList';
+
+interface IRollingPaper {
+  id: number;
+  content: string;
+  author: string;
+  showAuthor: boolean;
+}
 
 interface RollingModalProps {
   selectedPaper: string;
