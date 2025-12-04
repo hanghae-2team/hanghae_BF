@@ -1,8 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
-import { arrayUnion, doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
-import { v4 as uuidv4 } from 'uuid';
 
-import { db } from '@/lib/firebase';
+import rollingPapersData from '@/data/rollingPapers.json';
 
 export interface RollingPaper {
   message: string;
@@ -34,10 +32,30 @@ export interface RollingPaperResponse {
   rollingPapers: RollingPaperResult[];
 }
 
+// JSON 데이터 타입
+interface RollingPaperData {
+  id: string;
+  rollingPapers: RollingPaperRequest[];
+}
+
+// JSON 데이터를 타입으로 캐스팅
+const rollingPapers = rollingPapersData as RollingPaperData[];
+
 export const getRollingPaper = async (receiverId: string): Promise<RollingPaperResponse> => {
-  const rollingPaperDocRef = doc(db, 'rollingPapers', receiverId);
-  const docSnap = await getDoc(rollingPaperDocRef);
-  return docSnap.data() as RollingPaperResponse;
+  const data = rollingPapers.find((rp) => rp.id === receiverId);
+
+  if (!data) {
+    return { rollingPapers: [] };
+  }
+
+  // id를 number로 변환하여 반환
+  const papers = data.rollingPapers.map((paper, index) => ({
+    id: index,
+    message: paper.message,
+    writer: paper.writer,
+  }));
+
+  return { rollingPapers: papers };
 };
 
 export const useAddRollingPaper = ({
@@ -48,55 +66,17 @@ export const useAddRollingPaper = ({
   onError: (error: unknown) => void;
 }) => {
   return useMutation({
-    mutationFn: async ({ receiverId, rollingPaper, senderId }: AddRollingPaperParams) => {
-      const userDocRef = doc(db, 'rollingPapers', receiverId);
-      const userInfoDocRef = doc(db, 'users', senderId);
-      const rollingPaperId = uuidv4();
-      try {
-        // 문서 존재 여부 확인
-        const docSnap = await getDoc(userDocRef);
+    mutationFn: async ({ receiverId, rollingPaper }: AddRollingPaperParams) => {
+      // JSON은 읽기 전용이므로 성공 응답만 반환
+      const newRollingPaper: RollingPaperRequest = {
+        id: crypto.randomUUID(),
+        message: rollingPaper.message,
+        writer: rollingPaper.writer || '',
+      };
 
-        const newRollingPaper: RollingPaperRequest = {
-          id: rollingPaperId,
-          message: rollingPaper.message,
-          writer: rollingPaper.writer || '',
-        };
+      console.log(`롤링페이퍼 작성 (읽기 전용 모드): ${receiverId}`, newRollingPaper);
 
-        const newSend: RollingPaperSenderRequest = {
-          id: rollingPaperId,
-          receiverId: receiverId,
-        };
-
-        // 롤링페이퍼 리스트에 추가
-        if (docSnap.exists()) {
-          // 문서가 존재하면 배열에 추가
-          await updateDoc(userDocRef, {
-            rollingPapers: arrayUnion(newRollingPaper),
-          });
-        } else {
-          // 문서가 없으면 새로 생성
-          await setDoc(userDocRef, {
-            rollingPapers: [newRollingPaper],
-          });
-        }
-
-        const userInfoDocSnap = await getDoc(userInfoDocRef);
-        // 유저정보에 롤링페이퍼 전송했음을 업데이트
-        if (userInfoDocSnap.exists()) {
-          await updateDoc(userInfoDocRef, {
-            writedRollingPapers: arrayUnion(newSend),
-          });
-        } else {
-          await setDoc(userInfoDocRef, {
-            writedRollingPapers: [newSend],
-          });
-        }
-
-        return { success: true, rollingPaper: newRollingPaper };
-      } catch (error) {
-        console.error('Error adding rolling paper:', error);
-        throw error;
-      }
+      return { success: true, rollingPaper: newRollingPaper };
     },
     onSuccess,
     onError,
