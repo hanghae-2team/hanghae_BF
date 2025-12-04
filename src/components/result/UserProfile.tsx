@@ -1,12 +1,6 @@
-import { useQuery } from '@tanstack/react-query';
-import { PencilLine } from 'lucide-react';
-
-import { getUser, type User } from '@/apis/users';
-import { RollingPaperWriteDialog } from '@/components/result/RollingPaperWriteDialog';
-import { useAuth } from '@/contexts/AuthContext';
+import { type User } from '@/apis/users';
 import { Avatar, AvatarFallback, AvatarImage } from '@/elements/avatar';
 import { Badge } from '@/elements/badge';
-import { Button } from '@/elements/button';
 import { Card, CardContent, CardHeader } from '@/elements/card';
 import { HOBBIES } from '@/utils/hobbyUtils';
 
@@ -19,18 +13,18 @@ type Props = {
 };
 
 const UserProfile = ({ userData }: Props) => {
-  const { user: currentUser } = useAuth();
+  // const { user: currentUser } = useAuth();
 
-  const { data: currentUserData } = useQuery({
-    queryKey: ['user', currentUser?.id || ''],
-    queryFn: () => getUser(currentUser?.id || ''),
-    select: (res) => res.data,
-    enabled: !!currentUser?.id,
-  });
+  // const { data: currentUserData } = useQuery({
+  //   queryKey: ['user', currentUser?.id || ''],
+  //   queryFn: () => getUser(currentUser?.id || ''),
+  //   select: (res) => res.data,
+  //   enabled: !!currentUser?.id,
+  // });
 
-  const isAlreadyWrite = currentUserData?.writedRollingPapers?.some(
-    (rollingPaper) => rollingPaper.receiverId === userData.id
-  );
+  // const isAlreadyWrite = currentUserData?.writedRollingPapers?.some(
+  //   (rollingPaper) => rollingPaper.receiverId === userData.id
+  // );
   return (
     <Card className="gap-2 bg-gradient-to-br from-blue-50/50 via-purple-50/50 to-pink-50/50 border-2 border-dashed border-blue-200/50">
       <CardHeader className="pb-4">
@@ -54,7 +48,7 @@ const UserProfile = ({ userData }: Props) => {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <RollingPaperWriteDialog
               renderTrigger={() => (
                 <Button className="text-white bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 hover:brightness-95 text-sm px-4 py-2 shadow-lg hover:shadow-xl transition-all duration-200">
@@ -64,7 +58,7 @@ const UserProfile = ({ userData }: Props) => {
               )}
               userData={userData}
             />
-          </div>
+          </div> */}
         </div>
       </CardHeader>
 
